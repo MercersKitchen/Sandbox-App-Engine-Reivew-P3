@@ -5,9 +5,9 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
-
-//
 //Global Variables
+String Path = new File("").getAbsolutePath(); //Exported
+String directory = "C:\Users\mmercer\Documents\GitHub\Sandbox-App-Engine-Reivew-P3\App_Engine"; //Not exported
 //
 void setup() {}//End setup
 //
