@@ -1,8 +1,12 @@
 //Global Variables
 //
-void setup() {}//End setup
+void setup() {
+}//End setup
 //
-void draw() {}//End draw
+void draw() {
+  rect();
+  rect();
+}//End draw
 //
 void keyPressed() {}//End keyPressed
 //
