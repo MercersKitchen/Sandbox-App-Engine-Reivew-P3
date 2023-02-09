@@ -9,6 +9,14 @@ Example To Do List
 ---
 
 # To Do List
+- [] Case Study: layout, developer-rectangles, ratios
+- [x] Pathway and Directory Reading of file names
+- [] Drawing 2D Music Buttons
+  - [] Play
+  - [] Pause
+  - List all buttons
+- [] Using Meta Data
+- [] **Next Item**
 
 ---
 
