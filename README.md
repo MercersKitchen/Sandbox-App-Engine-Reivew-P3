@@ -17,6 +17,7 @@ Example To Do List
   - [] Pause is the center button, all are relative to this
   - [] List all buttons ...
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
+  - [] Future: connect player function to visual feedback
 - Using Meta Data: one font, into 3 rectangles, able to move rectangles anywhere
   - [] Loading meta data to String Variables
   - [] Review Text Code
