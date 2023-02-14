@@ -21,4 +21,8 @@ void drawStopButton() {
   fill( resetcolourDayMode ); //Change this to ternary operator
 }//End drawStopButton()
 //
+void drawPlayButton() {
+  triangle(playX1, PlayY1, playX2, PlayY2, playX3, PlayY3,);
+}//
+
 //End Music Player Buttons
