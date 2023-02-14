@@ -18,7 +18,7 @@ Example To Do List
   - [] Pause is the center button, all are relative to this
   - [] Play Triangle over top of Pause Shapes, based on single starting point and pause variables
   - [] Stop Square prototyped to the front of all buttons (stop, prev, reverse-skip, play-pause, forward-skip, next, Loop PlayList), with mute and other loops place appropriately (use developer rectangles for symmetrical spacing)
-  - [] List all buttons ... design or research what these symbols are, then draw them
+  - [] List all buttons ... design or research what these symbols are, then draw these with code and numbers
     - [] Stop
     - [] previous track
     - [] reverse skip
