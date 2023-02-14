@@ -14,6 +14,7 @@ Example To Do List
 - Drawing 2D Music Buttons: all buttons happen together
   - [] All drawings start with same X&Y Variables (will be received parameters)
   - [] All drawings have scale factor for X&Y Dimensions (will be received parameters)
+  - [] Order of populating variables is mandatory, to use a variable it must be populated first, after size()
   - [] Pause is the center button, all are relative to this
   - [] Play Triangle over top of Pause Shapes, based on single starting point
   - [] Stop Square prototyped to the front of all buttons (stop, prev, reverse-skip, play-pause, forward-skip, next, Loop PlayList), with mute and other loops place appropriately (use developer rectangles for symmetrical spacing)
