@@ -37,6 +37,9 @@ Example To Do List
   - [] Future: Visual Feature of being clicked
 - [] Review 2D Shapes: how is your program organized in an algorithm?
 - Using Meta Data: one font, into 3 rectangles, able to move rectangles anywhere
+  - [] Review music pathway
+  - [] Review sound effect pathway
+  - [] Review concatenating pathways to .exe, directories to sketch, any additional pathways, and file names
   - [] Loading meta data to String Variables
   - [] Review Text Code
   - [] Create Text Calculator
