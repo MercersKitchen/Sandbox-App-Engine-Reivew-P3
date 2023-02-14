@@ -20,6 +20,9 @@ Example To Do List
   - [] List all buttons ...
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Future: connect player function to visual feedback
+  - [] Future: Night Mode Colors
+  - [] Future: Hover-over feature
+  - [] Future: Visual Feature of being clicked
 - Using Meta Data: one font, into 3 rectangles, able to move rectangles anywhere
   - [] Loading meta data to String Variables
   - [] Review Text Code
