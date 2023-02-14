@@ -35,6 +35,11 @@ Example To Do List
   - [] Future: Night Mode Colors by button and default by time
   - [] Future: Hover-over feature
   - [] Future: Visual Feature of being clicked
+  - [] OPTIONAL: include following 2D Shapes code attributes
+    - Note: what are the other codes noted elsewhere
+    - fill() & noFill()
+    - stroke() & noStroke()
+    - strokeWeight() & "reset to 1 pixel"
 - [] Review 2D Shapes: how is your program organized in an algorithm?
 - Using Meta Data: one font, into 3 rectangles, able to move rectangles anywhere
   - [] Review music pathway
