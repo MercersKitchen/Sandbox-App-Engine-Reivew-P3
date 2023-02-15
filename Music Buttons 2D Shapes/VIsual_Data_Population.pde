@@ -19,7 +19,7 @@ void setupPopulation() {
   playX1 = pauseX1;
   playY1 = pauseY1;
   playX2 = pauseX2 + pauseWidth;
-  playY2 = ;
+  playY2 = playY1 + (playY3 - playY1)*1/2;
   playX3 = playX1;
   playY3 = pauseY1 + pauseHeight;
   //
