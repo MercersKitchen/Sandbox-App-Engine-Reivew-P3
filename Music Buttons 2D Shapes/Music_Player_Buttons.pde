@@ -1,6 +1,7 @@
 //Global Variables
 float pauseX1, pauseY1, pauseX2, pauseY2, pauseWidth, pauseHeight;
 float pauseScaleWidth, pauseScaleHeight;
+float playX1, playY1, playX2, playY2, playX3, playY3;
 float stopX, stopY, stopWidth, stopHeight;
 color resetcolourNightMode=#FFFF4B, black=#000000; //Night Mode Friendly
 color resetcolourDayMode=#FFFFFF; //Not Night Mode Friendly
@@ -22,7 +23,7 @@ void drawStopButton() {
 }//End drawStopButton()
 //
 void drawPlayButton() {
-  triangle(playX1, PlayY1, playX2, PlayY2, playX3, PlayY3,);
+  triangle(playX1, playY1, playX2, playY2, playX3, playY3);
 }//
 
 //End Music Player Buttons
