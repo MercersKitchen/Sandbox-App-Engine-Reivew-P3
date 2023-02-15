@@ -26,5 +26,10 @@ void drawStopButton() {
 void drawPlayButton() {
   triangle(playX1, playY1, playX2, playY2, playX3, playY3);
 }//
-
+//
+void drawForwardSkipButton() {}//End drawForwardSkipButton
+//
+void drawNextButton() {}//End drawNextButton
+//
+void drawLoopSongOnce() {}//End drawLoopSongOnce
 //End Music Player Buttons
