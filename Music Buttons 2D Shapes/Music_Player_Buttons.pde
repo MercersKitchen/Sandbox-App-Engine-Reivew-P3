@@ -9,6 +9,7 @@ color resetcolourDayMode=#FFFFFF; //Not Night Mode Friendly
 void drawMusicButtons() {
   drawPauseButton();
   drawStopButton();
+  drawPlayButton();
 }//End drawMusicButtons
 //
 void drawPauseButton() {
