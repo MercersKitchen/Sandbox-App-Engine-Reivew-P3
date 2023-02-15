@@ -56,6 +56,11 @@ Example To Do List
 
 ---
 
+Future ideas
+- [] display issues: landscape vs. portrait, CANVAS bigger than display & scale down
+
+---
+
 # To include
 
 ---
