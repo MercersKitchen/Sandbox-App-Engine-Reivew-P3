@@ -26,16 +26,17 @@ void setupPopulation() {
   playX2 = pauseX2 + pauseWidth;
   playY2 = playY1 + (playY3 - playY1)*1/2;
   //
-  forwardX1A = ;
-  forwardY1A = ;
-  forwardX2A = ;
-  forwardY2A = ;
-  forwardX3A = ;
-  forwardY3A = ;
-  forwardX1B = ;
-  forwardY1B = ;
-  forwardX2B = ;
-  forwardY2B = ;
-  forwardX3B = ;
-  forwardY3B = ;
+  forwardX1A = startingX+pauseWidth*1.5+pauseHeight*1/3;
+  forwardY1A = pauseY1;
+  forwardX3A = forwardX1A;
+  forwardY3A = forwardY1A + pauseHeight;
+  forwardX2A = forwardX1A + pauseHeight*1/2;
+  forwardY2A = forwardY1A + ( forwardY3A - forwardY1A )*1/2 ;
+  forwardX1B = forwardX1A + pauseHeight*1/2;
+  forwardY1B = forwardY1A;
+  forwardX2B = forwardX2A + pauseHeight*1/2;
+  forwardY2B = forwardY2A;
+  forwardX3B = forwardX1B;
+  forwardY3B = forwardY3A;
+  //
 } //End setupPopulation()
