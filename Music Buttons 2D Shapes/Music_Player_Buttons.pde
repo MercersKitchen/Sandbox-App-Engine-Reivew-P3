@@ -5,6 +5,9 @@ float playX1, playY1, playX2, playY2, playX3, playY3;
 float stopX, stopY, stopWidth, stopHeight;
 float forwardX1A, forwardY1A, forwardX2A, forwardY2A, forwardX3A, forwardY3A;
 float forwardX1B, forwardY1B, forwardX2B, forwardY2B, forwardX3B, forwardY3B;
+float nextX1A, nextY1A, nextX2A, nextY2A, nextX3A, nextY3A;
+float nextX1B, nextY1B, nextX2B, nextY2B, nextX3B, nextY3B;
+float nextX, nextY, nextWidth, nextHeight;
 color resetcolourNightMode=#FFFF4B, black=#000000; //Night Mode Friendly
 color resetcolourDayMode=#FFFFFF; //Not Night Mode Friendly
 //
@@ -15,15 +18,15 @@ void drawMusicButtons() {
   drawPlayButton();
   drawButtonSpace( startingX+pauseWidth*1.5, startingY-pauseHeight*1/2 );
   drawForwardSkipButton();
-  drawButtonSpace(float x, float y);
+  drawButtonSpace(startingX+pauseWidth*1.5+pauseHeight*1/3+pauseHeight, startingY-pauseHeight*1/2);
   drawNextButton();
-  //drawButtonSpace(float x, float y);
+  //drawButtonSpace(float x, startingY-pauseHeight*1/2);
   drawLoopSongOnce();
-  //drawButtonSpace(float x, float y);
+  //drawButtonSpace(float x, startingY-pauseHeight*1/2);
   drawReverseSkipButton();
-  //drawButtonSpace(float x, float y);
+  //drawButtonSpace(float x, startingY-pauseHeight*1/2);
   drawPrevButton();
-  //drawButtonSpace(float x, float y);
+  //drawButtonSpace(float x, startingY-pauseHeight*1/2);
   drawStopButton();
 }//End drawMusicButtons
 //
