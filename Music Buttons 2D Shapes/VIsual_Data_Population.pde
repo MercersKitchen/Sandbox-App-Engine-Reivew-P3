@@ -39,20 +39,22 @@ void setupPopulation() {
   forwardX3B = forwardX1B;
   forwardY3B = forwardY3A;
   //
-  nextX1A = forwardX1A + pauseHeight*1/3;
+  nextX1A = forwardX2B + pauseHeight*1/3;
   nextY1A = pauseY1;
-  nextX2A = ;
-  nextY2A = ;
-  nextX3A = ;
-  nextY3A = ;
-  nextX1B = ;
+  nextX3A = nextX1A;
+  nextY3A = nextY1A + pauseHeight;
+  nextX2A = nextX1A + pauseHeight*1/3;
+  nextY2A = nextY1A + ( nextY3A - nextY1A )*1/2;
+  
+  nextX1B = nextX2A;
   nextY1B = nextY1A;
-  nextX2B = ;
-  nextY2B = ;
-  nextX3B = ;
-  nextY3B = ;
-  nextX = ;
+  nextX3B = nextX2A;
+  nextY3B = nextY1A + pauseHeight;
+  nextX2B = nextX1B + pauseHeight*1/3;
+  nextY2B = nextY1A + ( nextY3B - nextY1B )*1/2;
+  nextX = nextX2B;
   nextY = nextY1A;
-  nextWidth = ;
-  nextHeight = ;
+  nextWidth = pauseHeight*1/3;
+  nextHeight = pauseHeight;
+  //
 } //End setupPopulation()

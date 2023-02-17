@@ -8,6 +8,9 @@ float forwardX1B, forwardY1B, forwardX2B, forwardY2B, forwardX3B, forwardY3B;
 float nextX1A, nextY1A, nextX2A, nextY2A, nextX3A, nextY3A;
 float nextX1B, nextY1B, nextX2B, nextY2B, nextX3B, nextY3B;
 float nextX, nextY, nextWidth, nextHeight;
+float loopX, loopY, loopWidthRect, loopHeightRect;
+float loopX, loopY, loopWidthA, loopHeightA;
+float ;
 color resetcolourNightMode=#FFFF4B, black=#000000; //Night Mode Friendly
 color resetcolourDayMode=#FFFFFF; //Not Night Mode Friendly
 //
@@ -20,7 +23,7 @@ void drawMusicButtons() {
   drawForwardSkipButton();
   drawButtonSpace(startingX+pauseWidth*1.5+pauseHeight*1/3+pauseHeight, startingY-pauseHeight*1/2);
   drawNextButton();
-  //drawButtonSpace(float x, startingY-pauseHeight*1/2);
+  drawButtonSpace(startingX+pauseWidth*1.5+pauseHeight*1/3+pauseHeight+pauseHeight*1/3+pauseHeight, startingY-pauseHeight*1/2);
   drawLoopSongOnce();
   //drawButtonSpace(float x, startingY-pauseHeight*1/2);
   drawReverseSkipButton();
@@ -48,28 +51,31 @@ void drawStopButton() {
 }//End drawStopButton()
 //
 void drawPlayButton() {
-  //rect();
+  //rect( playX1, playY1, pauseHeight, pauseHeight);
   triangle(playX1, playY1, playX2, playY2, playX3, playY3);
 }//
 //
 void drawForwardSkipButton() {
-  rect(forwardX1A, pauseY1, pauseHeight, pauseHeight);
+  //rect(forwardX1A, pauseY1, pauseHeight, pauseHeight);
   triangle(forwardX1A, forwardY1A, forwardX2A, forwardY2A, forwardX3A, forwardY3A);
   triangle(forwardX1B, forwardY1B, forwardX2B, forwardY2B, forwardX3B, forwardY3B);
 }//End drawForwardSkipButton
 //
 void drawNextButton() {
-  //rect();
-  //triangle(nextX1A, nextY1A, nextX2A, nextY2A, nextX3A, nextY3A);
-  //triangle(nextX1B, nextY1B, nextX2B, nextY2B, nextX3B, nextY3B);
-  //rect(nextX, nextY, nextWidth, nextHeight);
+  rect(nextX1A, pauseY1, pauseHeight, pauseHeight);
+  triangle(nextX1A, nextY1A, nextX2A, nextY2A, nextX3A, nextY3A);
+  triangle(nextX1B, nextY1B, nextX2B, nextY2B, nextX3B, nextY3B);
+  rect(nextX, nextY, nextWidth, nextHeight);
 }//End drawNextButton
 //
 void drawLoopSongOnce() {
-  //rect();
-  //ellipse();
-  //ellipse();
+  //rect(loopX, loopY, loopWidthRect, loopHeightRect);
+  ellipseMode(CORNER);
+  //ellipse(loopX, loopY, loopWidthA, loopHeightA);
+  //ellipse(loopX, loopY, loopWidthB, loopHeightB);
+  ellipseMode(CENTER);
   //text(); "1"
+  
 }//End drawLoopSongOnce
 //
 void drawReverseSkipButton() {
