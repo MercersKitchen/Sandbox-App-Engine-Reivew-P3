@@ -32,7 +32,7 @@ Example To Do List
     - [] OPTIONAL Shuffle (hint, uses random)
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Future: connect player function to visual feedback
-  - [] Future: Night Mode Colors by button and default by time
+  - [] Future: Night Mode Colors by button and default by time (binary choice, returning a choice based on preference)
   - [] Future: Hover-over feature
   - [] Future: Visual Feature of being clicked
   - [] OPTIONAL: include following 2D Shapes code attributes
