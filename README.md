@@ -33,7 +33,17 @@ Example To Do List
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Future: connect player function to visual feedback of button
     - [] Keyboard Shortcuts for button algorithms
-    - [] 
+    - [] Play-Pause:
+    - [] Stop:
+    - [] Mute Button:
+    - [] Forward Skip:
+    - [] Reverse Skip: 
+    - [] Next track:
+    - [] Previous track:
+    - [] Loop Single Song Once
+    - [] Loop Single Song Infinite
+    - [] Loop Playlist Infinite
+    - [] OPTIONAL Shuffle (hint, uses random)
   - [] Future: Night Mode Colors by button and default by time (binary choice, returning a choice based on preference)
     - Use of ternary operator
     - CS20 is able to use daytime procedure for more individual control
