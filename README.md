@@ -33,6 +33,8 @@ Example To Do List
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Future: connect player function to visual feedback
   - [] Future: Night Mode Colors by button and default by time (binary choice, returning a choice based on preference)
+    - Use of ternary operator
+    - CS20 is able to use daytime procedure for more individual control
   - [] Future: Hover-over feature
   - [] Future: Visual Feature of being clicked
   - [] OPTIONAL: include following 2D Shapes code attributes
