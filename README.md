@@ -12,24 +12,24 @@ Example To Do List
 - [] Case Study: layout, developer-rectangles, ratios
 - [x] Pathway and Directory Reading of file names
 - Drawing 2D Music Buttons: all buttons happen together
-  - [] All drawings start with same X&Y Variables (will be received parameters)
-  - [] All drawings have scale factor for X&Y Dimensions (will be received parameters)
-  - [] Order of populating variables is mandatory, to use a variable it must be populated first, after size()
-  - [] Pause is the center button, all are relative to this
-  - [] Play Triangle over top of Pause Shapes, based on single starting point and pause variables
-  - [] Stop Square prototyped to the front of all buttons (stop, prev, reverse-skip, play-pause, forward-skip, next, Loop PlayList), with mute and other loops place appropriately (use developer rectangles for symmetrical spacing)
-  - [] List all buttons ... design or research what these symbols are, then draw these with code and numbers
-    - [] Stop
-    - [] previous track
-    - [] reverse skip
-    - [] play-pause
-    - [] forward skip
-    - [] next track
-    - [] Loop Single Song Once
-    - [] Loop Single Song Infinite
-    - [] Loop Playlist Infinite
-    - [] Mute Button
-    - [] OPTIONAL Shuffle (hint, uses random)
+  - [x] All drawings start with same X&Y Variables (will be received parameters)
+  - [x] All drawings have scale factor for X&Y Dimensions (will be received parameters)
+  - [x] Order of populating variables is mandatory, to use a variable it must be populated first, after size()
+  - [x] Pause is the center button, all are relative to this
+  - [x] Play Triangle over top of Pause Shapes, based on single starting point and pause variables
+  - [x] Stop Square prototyped to the front of all buttons (stop, prev, reverse-skip, play-pause, forward-skip, next, Loop PlayList), with mute and other loops place appropriately (use developer rectangles for symmetrical spacing)
+  - [x] List all buttons ... design or research what these symbols are, then draw these with code and numbers
+    - [x] Stop
+    - [x] previous track
+    - [x] reverse skip
+    - [x] play-pause
+    - [x] forward skip
+    - [x] next track
+    - [x] Loop Single Song Once
+    - [x] Loop Single Song Infinite
+    - [x] Loop Playlist Infinite
+    - [x] Mute Button
+    - [x] OPTIONAL Shuffle (hint, uses random)
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Future: connect player function to visual feedback
   - [] Future: Night Mode Colors by button and default by time (binary choice, returning a choice based on preference)
