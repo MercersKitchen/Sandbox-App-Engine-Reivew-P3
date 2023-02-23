@@ -34,6 +34,7 @@ Example To Do List
   - [] Future: connect player function to visual feedback of button
     - [] Keyboard Shortcuts for button algorithms
     - [] Play-Pause: pressing the P keyboard button will ...
+      - At anytime, pause will stop playing the file and hold the position in the file
       - Beginning of .mp3: play file
       - "Up to 80%" of .mp3: "I want to play the rest of the song"
       - "After 80%": "I am done, play the next song."
