@@ -34,9 +34,9 @@ Example To Do List
   - [] Future: connect player function to visual feedback of button
     - [] Keyboard Shortcuts for button algorithms
     - [] Play-Pause: 
-      - Beginning: 
-      - Middle: 
-      - End: 
+      - Beginning of .mp3: play file
+      - "Up to 80%" of .mp3: "I want to play the rest of the song"
+      - "After 80%": "I am done, play the next song."
     - [] Stop:
     - [] Mute Button:
     - [] Forward Skip:
