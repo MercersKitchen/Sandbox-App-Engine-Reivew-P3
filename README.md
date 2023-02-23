@@ -33,12 +33,13 @@ Example To Do List
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Future: connect player function to visual feedback of button
     - [] Keyboard Shortcuts for button algorithms
-    - [] Play-Pause: 
+    - [] Play-Pause: pressing the P keyboard button will ...
       - Beginning of .mp3: play file
       - "Up to 80%" of .mp3: "I want to play the rest of the song"
       - "After 80%": "I am done, play the next song."
       - ERROR: computer can play a song file, at the end of the file, but nothing will be heard in the speakers
-    - [] Stop: 
+    - [] Stop: pressing S will ...
+      - ERROR: STOP does not exist, only pause()
     - [] Mute Button:
     - [] Forward Skip:
     - [] Reverse Skip: 
