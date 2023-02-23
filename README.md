@@ -40,6 +40,8 @@ Example To Do List
       - "After 80%": "I am done, play the next song."
       - ERROR: computer can play a song file, at the end of the file, but nothing will be heard in the speakers
     - [] Stop: pressing S will ...
+      - pause() the current .mp3 file
+      - rewind() the current .mp3 file so it is ready to play at the beginning of the file
       - ERROR: STOP does not exist, only pause()
     - [] Mute Button:
     - [] Forward Skip:
