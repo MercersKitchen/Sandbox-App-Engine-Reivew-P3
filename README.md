@@ -37,7 +37,8 @@ Example To Do List
       - Beginning of .mp3: play file
       - "Up to 80%" of .mp3: "I want to play the rest of the song"
       - "After 80%": "I am done, play the next song."
-    - [] Stop:
+      - ERROR: computer can play a song file, at the end of the file, but nothing will be heard in the speakers
+    - [] Stop: 
     - [] Mute Button:
     - [] Forward Skip:
     - [] Reverse Skip: 
