@@ -56,24 +56,24 @@ void drawPlayButton() {
 }//
 //
 void drawForwardSkipButton() {
-  //rect(forwardX1A, pauseY1, pauseHeight, pauseHeight);
-  triangle(forwardX1A, forwardY1A, forwardX2A, forwardY2A, forwardX3A, forwardY3A);
-  triangle(forwardX1B, forwardY1B, forwardX2B, forwardY2B, forwardX3B, forwardY3B);
+  //rect();
+  //triangle();
+  //triangle();
 }//End drawForwardSkipButton
 //
 void drawNextButton() {
-  rect(nextX1A, pauseY1, pauseHeight, pauseHeight);
-  triangle(nextX1A, nextY1A, nextX2A, nextY2A, nextX3A, nextY3A);
-  triangle(nextX1B, nextY1B, nextX2B, nextY2B, nextX3B, nextY3B);
-  rect(nextX, nextY, nextWidth, nextHeight);
+  //rect();
+  //triangle();
+  //triangle();
+  //rect();
 }//End drawNextButton
 //
 void drawLoopSongOnce() {
-  //rect(loopX, loopY, loopWidthRect, loopHeightRect);
-  ellipseMode(CORNER);
-  //ellipse(loopX, loopY, loopWidthA, loopHeightA);
-  //ellipse(loopX, loopY, loopWidthB, loopHeightB);
-  ellipseMode(CENTER);
+  //rect();
+  //ellipseMode(CORNER);
+  //ellipse();
+  //ellipse();
+  //ellipseMode(CENTER);
   //text(); "1"
   
 }//End drawLoopSongOnce
