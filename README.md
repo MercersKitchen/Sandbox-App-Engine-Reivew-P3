@@ -43,7 +43,8 @@ Example To Do List
       - pause() the current .mp3 file
       - rewind() the current .mp3 file so it is ready to play at the beginning of the file
       - ERROR: STOP does not exist, only pause()
-    - [] Mute Button:
+    - [] Mute Button: pressing M will ... stop the speakers but computer will continue to play the file until it ends
+      - ERROR: if the .mp3 file is muted AND .mp3 is at the end, then 
     - [] Forward Skip:
     - [] Reverse Skip: 
     - [] Next track:
