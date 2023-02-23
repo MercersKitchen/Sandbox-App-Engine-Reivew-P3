@@ -33,7 +33,10 @@ Example To Do List
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Future: connect player function to visual feedback of button
     - [] Keyboard Shortcuts for button algorithms
-    - [] Play-Pause:
+    - [] Play-Pause: 
+      - Beginning: 
+      - Middle: 
+      - End: 
     - [] Stop:
     - [] Mute Button:
     - [] Forward Skip:
