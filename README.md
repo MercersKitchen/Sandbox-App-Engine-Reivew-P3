@@ -65,6 +65,9 @@ Example To Do List
         - play(index)
       - Error, Array Index out of Bounds: when index=0, index-1=array.length()-1
       - ```if ( index <= -1 ) { index = array.length() - 1; }```
+    - [] Next & Previous Option:
+      - what happens if a song is playing
+      - what happens if a song is not playing
     - [] Loop Single Song Once: parameter = 1
     - [] Loop Single Song Infinite: parameter is -1 or blank
     - [] Loop Playlist Infinite: parameter = int ( random( 0, array.length() ) )
