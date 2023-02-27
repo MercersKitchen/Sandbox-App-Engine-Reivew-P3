@@ -52,6 +52,7 @@ Example To Do List
         - pause(index)
         - rewind(index)
         - index + 1
+      - Next Song
         - play(index)
         - Error: array.length()-1 = 0
     - [] Previous track:
