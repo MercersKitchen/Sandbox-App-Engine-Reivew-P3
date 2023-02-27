@@ -67,8 +67,9 @@ Example To Do List
       - ```if ( index <= -1 ) { index = array.length() - 1; }```
     - [] Loop Single Song Once: parameter = 1
     - [] Loop Single Song Infinite: parameter is -1 or blank
-    - [] Loop Playlist Infinite: parameter = random( 0, array.length() )
-      - OPTIONAL Shuffle (hint, uses random)
+    - [] Loop Playlist Infinite: parameter = int ( random( 0, array.length() ) )
+      - Caution: random returns a float
+      - Fix: int()
   - [] Future: Night Mode Colors by button and default by time (binary choice, returning a choice based on preference)
     - Use of ternary operator
     - CS20 is able to use daytime procedure for more individual control
