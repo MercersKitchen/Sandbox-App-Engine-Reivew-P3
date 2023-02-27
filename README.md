@@ -50,7 +50,7 @@ Example To Do List
     - [] Next track:
     - [] Previous track:
     - [] Loop Single Song Once: parameter = 1
-    - [] Loop Single Song Infinite
+    - [] Loop Single Song Infinite: parameter is -1 or blank
     - [] Loop Playlist Infinite
     - [] OPTIONAL Shuffle (hint, uses random)
   - [] Future: Night Mode Colors by button and default by time (binary choice, returning a choice based on preference)
