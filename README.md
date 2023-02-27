@@ -51,19 +51,19 @@ Example To Do List
       - Current Song:
         - pause(index)
         - rewind(index)
-        - index - 1
+        - index + 1
       - Next Song
         - play(index)
-      - Error, Array Index out of Bounds: 0 = array.length()-1
+      - Error, Array Index out of Bounds: array.length()-1 = 0
       - ```if ( index + 1 >= array.length ) { index = 0; }```
     - [] Previous track:
       - Current Song:
         - pause(index)
         - rewind(index)
-        - index + 1
+        - index - 1
       - Next Song
         - play(index)
-      - Error, Array Index out of Bounds: array.length()-1 = 0
+      - Error, Array Index out of Bounds: when index=0, index-1=array.length()-1
       - ```if ( index + 1 >= array.length ) { index = 0; }```
     - [] Loop Single Song Once: parameter = 1
     - [] Loop Single Song Infinite: parameter is -1 or blank
