@@ -54,7 +54,7 @@ Example To Do List
         - index - 1
       - Next Song
         - play(index)
-      - Error, Array Index out of Bounds: array.length()-1 = 0
+      - Error, Array Index out of Bounds: 0 = array.length()-1
       - ```if ( index + 1 >= array.length ) { index = 0; }```
     - [] Previous track:
       - Current Song:
