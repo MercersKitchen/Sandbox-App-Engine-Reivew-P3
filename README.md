@@ -45,11 +45,11 @@ Example To Do List
       - ERROR: STOP does not exist, only pause()
     - [] Mute Button: pressing M will ... stop the speakers but computer will continue to play the file until it ends
       - ERROR: if the .mp3 file is muted AND .mp3 is at the end, then unMute() will rewind() the current .mp3 and play from the beginning
-    - [] Forward Skip: within a song for milliseconds or seconds
-    - [] Reverse Skip: 
+    - [] Forward Skip: within a song for milliseconds or seconds (student decides how many seconds)
+    - [] Reverse Skip: within a song for milliseconds or seconds (student decides how many seconds)
     - [] Next track:
     - [] Previous track:
-    - [] Loop Single Song Once
+    - [] Loop Single Song Once: parameter = 1
     - [] Loop Single Song Infinite
     - [] Loop Playlist Infinite
     - [] OPTIONAL Shuffle (hint, uses random)
