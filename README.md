@@ -68,8 +68,8 @@ Example To Do List
     - [] Next & Previous Option: students to code
       - what happens if a song is playing
       - what happens if a song is not playing
-      - Solution: after 10 seconds, the previous buttons plays the beginning of the current sone
-      - Press Previous twice, then play the previous button
+      - Solution: after 10 seconds, the previous buttons plays the beginning of the current song
+      - Press Previous Button twice, then play the previous song
     - [] Loop Single Song Once: parameter = 1
     - [] Loop Single Song Infinite: parameter is -1 or blank
     - [] Loop Playlist Infinite: parameter = int ( random( 0, array.length() ) )
