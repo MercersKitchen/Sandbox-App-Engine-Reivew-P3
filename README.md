@@ -51,7 +51,7 @@ Example To Do List
       - Current Song:
         - pause(index)
         - rewind(index)
-        - index + 1
+        - index - 1
       - Next Song
         - play(index)
       - Error, Array Index out of Bounds: array.length()-1 = 0
