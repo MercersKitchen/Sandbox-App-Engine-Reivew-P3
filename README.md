@@ -54,7 +54,7 @@ Example To Do List
         - index + 1
       - Next Song
         - play(index)
-        - Error: array.length()-1 = 0
+      - Error, Array Index out of Bounds: array.length()-1 = 0
     - [] Previous track:
       - 
     - [] Loop Single Song Once: parameter = 1
