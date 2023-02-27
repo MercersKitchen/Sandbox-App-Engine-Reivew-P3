@@ -48,7 +48,14 @@ Example To Do List
     - [] Forward Skip: within a song for milliseconds or seconds (student decides how many seconds)
     - [] Reverse Skip: within a song for milliseconds or seconds (student decides how many seconds)
     - [] Next track:
+      - Current Song:
+        - pause(index)
+        - rewind(index)
+        - index + 1
+        - play(index)
+        - Error: array.length()-1 = 0
     - [] Previous track:
+      - 
     - [] Loop Single Song Once: parameter = 1
     - [] Loop Single Song Infinite: parameter is -1 or blank
     - [] Loop Playlist Infinite
