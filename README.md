@@ -69,7 +69,7 @@ Example To Do List
     - [] Loop Single Song Infinite: parameter is -1 or blank
     - [] Loop Playlist Infinite: parameter = int ( random( 0, array.length() ) )
       - Caution: random returns a float
-      - Fix: int()
+      - Fix with int(), called CASTING
   - [] Future: Night Mode Colors by button and default by time (binary choice, returning a choice based on preference)
     - Use of ternary operator
     - CS20 is able to use daytime procedure for more individual control
