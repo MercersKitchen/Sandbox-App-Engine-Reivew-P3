@@ -65,7 +65,7 @@ Example To Do List
         - play(index)
       - Error, Array Index out of Bounds: when index=0, index-1=array.length()-1
       - ```if ( index <= -1 ) { index = array.length() - 1; }```
-    - [] Next & Previous Option:
+    - [] Next & Previous Option: students to code
       - what happens if a song is playing
       - what happens if a song is not playing
       - Solution: after 10 seconds, the previous buttons plays the beginning of the current sone
