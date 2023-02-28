@@ -1,7 +1,7 @@
 void setupPopulation() {
   //
-  float startingX = width * 1/2;
-  float startingY = height * 1/2;
+  float startingX = appWidth * 1/2;
+  float startingY = appHeight * 1/2;
   //
   pauseScaleWidth = 1.0/25.0; //used to change x-size
   pauseScaleHeight = 1.0/3.0; //used to change y-axis
@@ -14,7 +14,7 @@ void setupPopulation() {
   pauseX2 = startingX + pauseWidth*1/2;
   pauseY2 = pauseY1;
   //
-  stopX = startingX - (width * 14/30);
+  stopX = startingX - (appWidth * 14/30);
   stopY = pauseY1;
   stopWidth = pauseHeight;
   stopHeight = pauseHeight;

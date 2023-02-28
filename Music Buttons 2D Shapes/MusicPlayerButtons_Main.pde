@@ -3,8 +3,8 @@ int appWidth, appHeight;
 //
 void setup() {
   //Landscape (portrait, square)
-  size(700, 400); //width, height
-  //fullScreen(); //displayWidth, displayHeight
+  //size(700, 400); //width, height
+  fullScreen(); //displayWidth, displayHeight
   //
   //ERROR: CANVAS is bigger than Display
   //ERROR: stating display geomtery (i.e. landscape, portrait, Square)
