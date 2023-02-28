@@ -4,6 +4,12 @@ void setup() {
   //Landscape (portrait, square)
   size(700, 400); //width, height
   //fullScreen(); //displayWidth, displayHeight
+  //
+  //ERROR: CANVAS is bigger than Display
+  //ERROR: stating display geomtery (i.e. landscape, portrait, Square)
+  appWidth = width; //displayWidth
+  appHeight = height; //displayHeight
+  //
   //Population, visual data
   setupPopulation();
   //
