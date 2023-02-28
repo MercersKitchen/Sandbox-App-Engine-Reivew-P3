@@ -8,9 +8,9 @@ float forwardX1B, forwardY1B, forwardX2B, forwardY2B, forwardX3B, forwardY3B;
 float nextX1A, nextY1A, nextX2A, nextY2A, nextX3A, nextY3A;
 float nextX1B, nextY1B, nextX2B, nextY2B, nextX3B, nextY3B;
 float nextX, nextY, nextWidth, nextHeight;
-float loopX, loopY, loopWidthRect, loopHeightRect;
-float loopX, loopY, loopWidthA, loopHeightA;
-float ;
+//float loopX, loopY, loopWidthRect, loopHeightRect;
+//float loopX, loopY, loopWidthA, loopHeightA;
+//float ;
 color resetcolourNightMode=#FFFF4B, black=#000000; //Night Mode Friendly
 color resetcolourDayMode=#FFFFFF; //Not Night Mode Friendly
 //

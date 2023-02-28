@@ -1,4 +1,5 @@
 //Global Variables
+int appWidth, appHeight;
 //
 void setup() {
   //Landscape (portrait, square)
