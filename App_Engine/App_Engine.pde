@@ -11,16 +11,11 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
 //Global Variables
-String path = new File("").getAbsolutePath(); //Exported Program
-//CAUTION: GitHub must be linked to the C-Drive instead of FS ... This might need a lesson
-String directory = "C:/Users/mmercer/Documents/GitHub/Sandbox-App-Engine-Reivew-P3/App_Engine"; //Not Exported
-//Reminder: \n is a character escape, so pathway must have forward slashes
+
 //
 
 void setup() {
   //
-  
-  
   songs[0].loop(0); //Change the index manually
   //
   setupMusic();
