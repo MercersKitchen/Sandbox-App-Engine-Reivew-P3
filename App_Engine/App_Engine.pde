@@ -55,6 +55,8 @@ void setup() {
     }
   } //Catch when Pathway NULL, not exported
   songs[0].loop(0); //Change the index manually
+  //
+  setupMusic();
 }//End setup
 //
 void draw() {
