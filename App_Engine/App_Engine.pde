@@ -11,23 +11,19 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
 //Global Variables
-
 //
-
 void setup() {
+  //
+  setupMusic();
   //
   songs[0].loop(0); //Change the index manually
   //
-  setupMusic();
 }//End setup
 //
-void draw() {
-}//End draw
+void draw() {}//End draw
 //
-void keyPressed() {
-}//End keyPressed
+void keyPressed() {}//End keyPressed
 //
-void mousePressed() {
-}//End mousePressed
+void mousePressed() {}//End mousePressed
 //
 //End MAIN Program (Driver)
