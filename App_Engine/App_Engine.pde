@@ -16,13 +16,10 @@ String path = new File("").getAbsolutePath(); //Exported Program
 String directory = "C:/Users/mmercer/Documents/GitHub/Sandbox-App-Engine-Reivew-P3/App_Engine"; //Not Exported
 //Reminder: \n is a character escape, so pathway must have forward slashes
 //
-Minim minim; //creates an object to access all functions
-AudioPlayer[] songs = new AudioPlayer[16]; //creates "Play List" variable holding extensions WAV, AIFF, AU, SND, and MP3
-//
+
 void setup() {
   //
-  minim = new Minim (this); //load from data directory, loadFile should also load from project folder, like loadImage
-  //
+  
   File anyDirectory = new File(path); //Used when exported
   println ("Exported Directory", anyDirectory);
   File githubDirectory = new File(directory); //Used when prototyping
