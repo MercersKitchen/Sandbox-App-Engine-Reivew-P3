@@ -21,11 +21,15 @@ void setupMusic() {
   //
 } //End setupMusic
 //
-void drawMusic() {}//End drawMusic
+void drawMusic() {
+}//End drawMusic
 //
-void keyPressedMusic() {}//End keyPressedMusic
+void keyPressedMusic() {
+  //Music Key Board Short Cuts
+}//End keyPressedMusic
 //
-void mousePressedMusic() {}//End mousePressedMusic
+void mousePressedMusic() {
+}//End mousePressedMusic
 //
 void concatenationOfMusicFiles() {
   pathway = "data/";

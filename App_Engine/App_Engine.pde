@@ -20,10 +20,18 @@ void setup() {
   //
 }//End setup
 //
-void draw() {}//End draw
+void draw() {
+}//End draw
 //
-void keyPressed() {}//End keyPressed
+void keyPressed() {
+  keyPressedMusic();
+  //
+  //Prototyping to copy when works
+  
+  //
+}//End keyPressed
 //
-void mousePressed() {}//End mousePressed
+void mousePressed() {
+}//End mousePressed
 //
 //End MAIN Program (Driver)
