@@ -14,8 +14,8 @@ void setupMusic() {
   //Reminder: finish OS_Level Code to auto read pathway and files (See Operating System)
   //
   concatenationOfMusicFiles();
-  songs[0] = minim.loadFile( path + grove );
-  songs[1] = minim.loadFile( path + newsroom );
+  songs[0] = minim.loadFile( pathway + grove );
+  songs[1] = minim.loadFile( pathway + newsroom );
   soundEffects[0] = minim.loadFile( pathway + string );
   soundEffects[1] = minim.loadFile( pathway + door );
   //
