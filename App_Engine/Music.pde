@@ -3,6 +3,7 @@ Minim minim; //creates an object to access all functions
 AudioPlayer[] songs = new AudioPlayer[2]; //creates "Play List" variable holding extensions WAV, AIFF, AU, SND, and MP3
 AudioPlayer[] soundEffects = new AudioPlayer[2];
 String pathway, grove, newsroom, string, door;
+int currentSong=0;
 //
 void setupMusic() {
   //
@@ -26,6 +27,24 @@ void drawMusic() {
 //
 void keyPressedMusic() {
   //Music Key Board Short Cuts
+  //
+  if ( key == 'm' || key == 'M' ) {//Mute Button, not PAUSE, only affect speakers
+    if ( songs[currentSong].isMuted() ) {
+      songs[currentSong].unmute();
+    } else if ( songs[currentSong].position() >= songs[currentSong].length()*4/5 ) {
+      //Students to finish SMARTER Mute Button
+      //ERROR: music player breaks if song finishes
+      /* Ideas
+       - rewind the song
+       - play the next song automatically
+       - play of notification to choose the next song
+       */
+      songs[currentSong].rewind(); //simple solution, contains ERROR
+    } else {
+      songs[currentSong].mute();
+    }
+  }//End Mute Button
+  //
 }//End keyPressedMusic
 //
 void mousePressedMusic() {

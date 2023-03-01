@@ -16,11 +16,14 @@ void setup() {
   //
   setupMusic();
   //
-  songs[0].loop(0); //Change the index manually
+  songs[currentSong].loop(0); //Change the index manually
   //
 }//End setup
 //
 void draw() {
+  //Debugging in CONSOLE
+  print("Current Sond Position:", songs[currentSong].position() );
+  println("\tEnd of Song:", songs[currentSong].length() );
 }//End draw
 //
 void keyPressed() {
