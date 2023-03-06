@@ -29,6 +29,8 @@ void keyPressedMusic() {
   //Music Key Board Short Cuts
   //
   if ( key == 'm' || key == 'M' ) {//Mute Button, not PAUSE, only affect speakers
+  //ERROR: this MUTE Button only works when song is playing
+  //ERROR Fix: unmute or rewind when song is not playing (i.e. unmute next song)
     if ( songs[currentSong].isMuted() ) {
       songs[currentSong].unmute();
     } else if ( songs[currentSong].position() >= songs[currentSong].length()*4/5 ) {
