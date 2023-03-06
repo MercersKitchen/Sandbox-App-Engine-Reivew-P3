@@ -47,6 +47,10 @@ void keyPressedMusic() {
     }
   }//End Mute Button
   //
+  //Forward & Reverse Skip
+  if () ; //parameter in milliseconds
+  if () ; //parameter in milliseconds
+  //
 }//End keyPressedMusic
 //
 void mousePressedMusic() {
