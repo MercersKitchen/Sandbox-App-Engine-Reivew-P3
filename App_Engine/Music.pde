@@ -80,6 +80,14 @@ void keyPressedMusic() {
     //       song is playing
     songs[currentSong].loop(-1); //parameter is empty or -1
   } //End Single Loop
+  //
+  //Stop
+  if () {}//End Stop
+  if ( songs[currentSong].isPlaying() ) { .pause(); .rewind(); } else { .rewind(); }
+  //
+  //Play-Pause
+  
+  //
 }//End keyPressedMusic
 //
 void mousePressedMusic() {
