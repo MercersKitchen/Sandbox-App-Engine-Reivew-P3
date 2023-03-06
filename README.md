@@ -36,27 +36,24 @@ Example To Do List
     - Different Buttons
       - [x] Mute Button: pressing M will ... stop the speakers but computer will continue to play the file until it ends
         - ERROR: if the .mp3 file is muted AND .mp3 is at the end, then unMute() will rewind() the current .mp3 and play from the beginning
-      - [] Forward Skip: within a song for milliseconds or seconds (student decides how many seconds)
-      - [] Reverse Skip: within a song for milliseconds or seconds (student decides how many seconds)
-      - [] Loop Single Song Once: parameter = 1
-      - [] Loop Single Song Infinite: parameter is -1 or blank
-
-      - [] Loop Playlist Infinite: parameter = int ( random( 0, array.length() ) )
+      - [x] Forward Skip: within a song for milliseconds or seconds (student decides how many seconds)
+      - [x] Reverse Skip: within a song for milliseconds or seconds (student decides how many seconds)
+      - [x] Loop Single Song Once: parameter = 1
+      - [x] Loop Single Song Infinite: parameter is -1 or blank
+      - [] ADVANCED, Loop & Shuffle Playlist Infinite: parameter = int ( random( 0, array.length() ) )
         - Caution: random returns a float
         - Fix with int(), called CASTING
-
-
+      - [] Stop: pressing S will ...
+        - pause() the current .mp3 file
+        - rewind() the current .mp3 file so it is ready to play at the beginning of the file
+        - ERROR: STOP does not exist, only pause()
       - [] Play-Pause: pressing the P keyboard button will ...
         - At anytime, pause will stop playing the file and hold the position in the file
         - Beginning of .mp3: play file
         - "Up to 80%" of .mp3: "I want to play the rest of the song"
         - "After 80%": "I am done, play the next song."
         - ERROR: computer can play a song file, at the end of the file, but nothing will be heard in the speakers
-      - [] Stop: pressing S will ...
-        - pause() the current .mp3 file
-        - rewind() the current .mp3 file so it is ready to play at the beginning of the file
-        - ERROR: STOP does not exist, only pause()
-    
+
       - [] Next track:
         - Current Song:
           - pause(index)
