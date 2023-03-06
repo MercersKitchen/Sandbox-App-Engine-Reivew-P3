@@ -29,8 +29,8 @@ void keyPressedMusic() {
   //Music Key Board Short Cuts
   //
   if ( key == 'm' || key == 'M' ) {//Mute Button, not PAUSE, only affect speakers
-  //ERROR: this MUTE Button only works when song is playing
-  //ERROR Fix: unmute or rewind when song is not playing (i.e. unmute next song)
+    //ERROR: this MUTE Button only works when song is playing
+    //ERROR Fix: unmute or rewind when song is not playing (i.e. unmute next song)
     if ( songs[currentSong].isMuted() ) {
       songs[currentSong].unmute();
     } else if ( songs[currentSong].position() >= songs[currentSong].length()*4/5 ) {
@@ -48,8 +48,17 @@ void keyPressedMusic() {
   }//End Mute Button
   //
   //Forward & Reverse Skip
-  if ( key == 'f' || key == 'F' ) songs[currentSong].skip(1000); //parameter in milliseconds
-  if ( key == 'r' || key == 'R' ) songs[currentSong].skip(1000); //parameter in milliseconds
+  if ( key == 'f' || key == 'F' ) {
+    songs[currentSong].skip(1000); //parameter in milliseconds
+  } if else ( songs[currentSong].position() >= songs[currentSong].length()*4/5 ) {
+    //Student to Finish
+  } if else (  ) { //Student to finish Conditional
+    //ERROR Catch: if end of song, then next song
+  } //End Forward
+  if ( key == 'r' || key == 'R' ) {
+    //Spamming R means start playing at beginning of song
+    songs[currentSong].skip(-1000); //parameter in milliseconds
+  } //End Reverse
   //
 }//End keyPressedMusic
 //
