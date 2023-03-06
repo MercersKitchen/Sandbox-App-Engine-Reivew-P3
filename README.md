@@ -31,10 +31,10 @@ Example To Do List
     - [x] Mute Button
     - [x] OPTIONAL Shuffle (hint, uses random)
   - [x] Keyboard Shortcuts, basic algorithms for different music player commands
-    - [] Manually load all music
+    - [x] Manually load all music
     - [] Use directories or pathways to load music
     - Different Buttons
-      - [] Mute Button: pressing M will ... stop the speakers but computer will continue to play the file until it ends
+      - [x] Mute Button: pressing M will ... stop the speakers but computer will continue to play the file until it ends
         - ERROR: if the .mp3 file is muted AND .mp3 is at the end, then unMute() will rewind() the current .mp3 and play from the beginning
       - [] Forward Skip: within a song for milliseconds or seconds (student decides how many seconds)
       - [] Reverse Skip: within a song for milliseconds or seconds (student decides how many seconds)
