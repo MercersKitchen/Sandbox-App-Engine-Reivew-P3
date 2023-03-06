@@ -48,8 +48,8 @@ void keyPressedMusic() {
   }//End Mute Button
   //
   //Forward & Reverse Skip
-  if () ; //parameter in milliseconds
-  if () ; //parameter in milliseconds
+  if ( key == 'f' || key == 'F' ) songs[currentSong].skip(1000); //parameter in milliseconds
+  if ( key == 'r' || key == 'R' ) songs[currentSong].skip(1000); //parameter in milliseconds
   //
 }//End keyPressedMusic
 //
