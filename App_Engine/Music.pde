@@ -56,16 +56,30 @@ void keyPressedMusic() {
     //Student to Finish
     //ERROR Catch: if end of song, then next song
     //Student to finish Conditional
-  } else {
-  }//End Forward
+  } //End Forward
   if ( key == 'r' || key == 'R' ) {
     //Spamming R means start playing at beginning of song
     songs[currentSong].skip(-1000); //parameter in milliseconds
   }//End Reverse
   //
-  //Single Loop
-  if (key == '1') songs[currentSong].loop(1);
+  //Single Loop, starter function
+  //if (key == '1') songs[currentSong].loop(1); //ERROR: immediately restarts song
+  if ( key == '1' ) {
+    //Finish Playing current song, then replay once
+    delay( songs[currentSong].length() - songs[currentSong].position() );
+    //ERROR: delay stops all player functions, computer doesn't recognize if 
+    //       song is playing
+    songs[currentSong].loop(0);
+  } //End Single Loop
   //
+  //Loop Infinte Times
+  if ( key <= '9' && key != '1' ) {
+    //Finish Playing current song, then replay once
+    delay( songs[currentSong].length() - songs[currentSong].position() );
+    //ERROR: delay stops all player functions, computer doesn't recognize if 
+    //       song is playing
+    songs[currentSong].loop(-1); //parameter is empty or -1
+  } //End Single Loop
 }//End keyPressedMusic
 //
 void mousePressedMusic() {
