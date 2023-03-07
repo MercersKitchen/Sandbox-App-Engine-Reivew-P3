@@ -40,9 +40,6 @@ Example To Do List
       - [x] Reverse Skip: within a song for milliseconds or seconds (student decides how many seconds)
       - [x] Loop Single Song Once: parameter = 1
       - [x] Loop Single Song Infinite: parameter is -1 or blank
-      - [] ADVANCED, Loop & Shuffle Playlist Infinite: parameter = int ( random( 0, array.length() ) )
-        - Caution: random returns a float
-        - Fix with int(), called CASTING
       - [] Stop: pressing S will ...
         - pause() the current .mp3 file
         - rewind() the current .mp3 file so it is ready to play at the beginning of the file
@@ -77,7 +74,9 @@ Example To Do List
         - what happens if a song is not playing
         - Solution: after 10 seconds, the previous buttons plays the beginning of the current song
         - Press Previous Button twice, then play the previous song
-    
+    - [] ADVANCED, Loop & Shuffle Playlist Infinite: parameter = int ( random( 0, array.length() ) )
+        - Caution: random returns a float
+        - Fix with int(), called CASTING
     
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Future: connect player function to visual feedback of button
