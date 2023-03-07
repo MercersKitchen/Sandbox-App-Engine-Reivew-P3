@@ -99,7 +99,9 @@ void keyPressedMusic() {
   if ( key == 'p' || key == 'P' ) { //Play-Pause Button
     if ( songs[currentSong].isPlaying() ) {
       .pause();
-    } else if () {
+    } else if (songs[currentSong].position() >= songs[currentSong].length()*4/5) {
+      // Student to Finish
+      // .pause(), .rewind(), then cue next song
     } else {
       .play(); //no auto rewind like loop()
     }
