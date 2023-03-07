@@ -40,11 +40,11 @@ Example To Do List
       - [x] Reverse Skip: within a song for milliseconds or seconds (student decides how many seconds)
       - [x] Loop Single Song Once: parameter = 1
       - [x] Loop Single Song Infinite: parameter is -1 or blank
-      - [] Stop: pressing S will ...
+      - [x] Stop: pressing S will ...
         - pause() the current .mp3 file
         - rewind() the current .mp3 file so it is ready to play at the beginning of the file
         - ERROR: STOP does not exist, only pause()
-      - [] Play-Pause: pressing the P keyboard button will ...
+      - [x] Play-Pause: pressing the P keyboard button will ...
         - At anytime, pause will stop playing the file and hold the position in the file
         - Beginning of .mp3: play file
         - "Up to 80%" of .mp3: "I want to play the rest of the song"
