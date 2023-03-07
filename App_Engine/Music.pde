@@ -84,17 +84,17 @@ void keyPressedMusic() {
   //Stop
   if ( key == 's' || key == 'S' ) { //STOP Button
     /*Note: possible smarter STOP Buttons
-   - include soft "PAUSE" for first 15 seconds of STOP
-   - include auto previous & next track if STOP at beginning or end of file
-   */
-  if ( songs[currentSong].isPlaying() ) {
-    .pause();
-    .rewind();
-  } else {
-    .rewind();
-  }
+     - include soft "PAUSE" for first 15 seconds of STOP
+     - include auto previous & next track if STOP at beginning or end of file
+     */
+    if ( songs[currentSong].isPlaying() ) {
+      songs[currentSong].pause();
+      songs[currentSong].rewind();
+    } else {
+      songs[currentSong].rewind();
+    }
   }//End Stop
-  
+
   //
   //Play-Pause
 
