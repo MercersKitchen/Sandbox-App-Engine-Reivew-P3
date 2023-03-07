@@ -33,7 +33,7 @@ Example To Do List
   - [x] Keyboard Shortcuts, basic algorithms for different music player commands
     - [x] Manually load all music
     - [] Use directories or pathways to load music
-    - Different Buttons
+    - Different Buttons: intro algorithms for different music player functions
       - [x] Mute Button: pressing M will ... stop the speakers but computer will continue to play the file until it ends
         - ERROR: if the .mp3 file is muted AND .mp3 is at the end, then unMute() will rewind() the current .mp3 and play from the beginning
       - [x] Forward Skip: within a song for milliseconds or seconds (student decides how many seconds)
@@ -79,6 +79,7 @@ Example To Do List
         - Fix with int(), called CASTING
     
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
+  - [] Music Player Function will need to work in Key Board Pressing and Button Pressing, thus will need to group code
   - [] Future: connect player function to visual feedback of button
 
     
