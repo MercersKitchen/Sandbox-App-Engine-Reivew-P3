@@ -109,6 +109,9 @@ void keyPressedMusic() {
     }
   } //End Play-Pause
   //
+  //Autoplay Button
+  if () {}
+  //
 }//End keyPressedMusic
 //
 void mousePressedMusic() {
