@@ -21,25 +21,14 @@ void setup() {
 }//End setup
 //
 void draw() {
-  //Debugging in CONSOLE
-  print("Current Sond Position:", songs[currentSong].position() );
-  println("\tEnd of Song:", songs[currentSong].length() );
-  //
-  /* Autoplay Section, see Music Subprogram
-  if ( autoPlayOn ) {//Auto Play
-    //if () {} if else () {} else {}
-    //Ex#1: .position() >= .length(), then rewind(), currentSong+=1, .play()
-    //Ex#2: .isPlaying(), when false rewind(), currentSong+=1, .play()
-  } //End Autoplay
-  */
-  //
+  drawMusic();
 }//End draw
 //
 void keyPressed() {
   keyPressedMusic();
   //
   //Prototyping to copy when works
-  
+
   //
 }//End keyPressed
 //
