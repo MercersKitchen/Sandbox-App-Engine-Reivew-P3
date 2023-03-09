@@ -50,8 +50,13 @@ Example To Do List
         - "Up to 80%" of .mp3: "I want to play the rest of the song"
         - "After 80%": "I am done, play the next song."
         - ERROR: computer can play a song file, at the end of the file, but nothing will be heard in the speakers
-
-      - [] Next track:
+      - [x] AutoPlay Button
+        - Auto Play next song based on whether the current song is playing
+        - Students to develop algorithm
+        - Teacher to review connections from keyPressed(){} to draw(){} with a Boolean
+        - Actual AutoPlay Button is grouped in its own void
+        - Purpose: introduce concept of music button functions grouped into individual voids
+      - [X] Next track:
         - Current Song:
           - pause(index)
           - rewind(index)
@@ -60,7 +65,7 @@ Example To Do List
           - play(index)
         - Error, Array Index out of Bounds: array.length()-1 = 0
         - ```if ( index + 1 >= array.length ) { index = 0; }```
-      - [] Previous track:
+      - [X] Previous track:
         - Current Song:
           - pause(index)
           - rewind(index)
