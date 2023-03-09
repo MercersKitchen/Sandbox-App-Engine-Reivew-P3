@@ -110,7 +110,13 @@ void keyPressedMusic() {
   } //End Play-Pause
   //
   //Autoplay Button
-  if () {}
+  if ( key == 'o' || key == 'O'  ) {
+    if ( autoPlayOn == false ) {
+      autoPlayOn = true;
+    } else {
+      autoPlayOn = false;
+    }
+  }//End Autoplay
   //
 }//End keyPressedMusic
 //
