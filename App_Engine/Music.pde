@@ -143,4 +143,6 @@ void concatenationOfMusicFiles() {
   door = "Wood_Door_Open_and_Close_Series.mp3";
 }//End concatenation
 //
+void autoPlayMusic() {}//End Auto Play Music
+//
 //End Music SubProgram
