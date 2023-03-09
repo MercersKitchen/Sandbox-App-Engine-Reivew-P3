@@ -4,6 +4,7 @@ AudioPlayer[] songs = new AudioPlayer[2]; //creates "Play List" variable holding
 AudioPlayer[] soundEffects = new AudioPlayer[2];
 String pathway, grove, newsroom, string, door;
 int currentSong=0;
+Boolean autoPlayOn=false;
 //
 void setupMusic() {
   //
