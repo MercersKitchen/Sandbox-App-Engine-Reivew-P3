@@ -132,6 +132,13 @@ void keyPressedMusic() {
     } else {
       currentSong++;
       //THROWS ArrayOutOfBounds Error
+      /*
+      if ( currentSong == numberOfSongs - 1 ) { //Throws error: ArrayIndexOutOfBounds
+        currentSong = numberOfSongs - numberOfSongs;
+      } else {
+        currentSong++;
+      }//End Catch "ArrayIndexOutOfBounds"
+      */
     }
   } //End Next Song Button
   //
