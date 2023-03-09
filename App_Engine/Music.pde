@@ -28,13 +28,7 @@ void drawMusic() {
   print("Current Sond Position:", songs[currentSong].position() );
   println("\tEnd of Song:", songs[currentSong].length() );
   //
-  /* Autoplay Section, see Music Subprogram
-  if ( autoPlayOn ) {//Auto Play
-    //if () {} if else () {} else {}
-    //Ex#1: .position() >= .length(), then rewind(), currentSong+=1, .play()
-    //Ex#2: .isPlaying(), when false rewind(), currentSong+=1, .play()
-  } //End Autoplay
-  */
+  autoPlayMusic();
   //
 }//End drawMusic
 //
@@ -130,6 +124,15 @@ void keyPressedMusic() {
     }
   }//End Autoplay
   //
+  //Next Song Button
+  if ( key == 'n' || key =='N' ) {
+    if ( .isPlaying() ) {} else {}
+  } //End Next Song Button
+  //
+  //Previous Song Button, Back Button
+  //Students to develop, based on next button
+  //if ( key == 'b' || key =='B' ) {} //End Previous Song Button or Back Button
+  //
 }//End keyPressedMusic
 //
 void mousePressedMusic() {
@@ -143,6 +146,12 @@ void concatenationOfMusicFiles() {
   door = "Wood_Door_Open_and_Close_Series.mp3";
 }//End concatenation
 //
-void autoPlayMusic() {}//End Auto Play Music
+void autoPlayMusic() {
+  if ( autoPlayOn ) {
+    //if () {} if else () {} else {}
+    //Ex#1: .position() >= .length(), then rewind(), currentSong+=1, .play()
+    //Ex#2: .isPlaying(), when false rewind(), currentSong+=1, .play()
+  }
+}//End Auto Play Music
 //
 //End Music SubProgram
