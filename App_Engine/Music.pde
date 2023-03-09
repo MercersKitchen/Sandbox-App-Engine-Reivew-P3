@@ -125,8 +125,14 @@ void keyPressedMusic() {
   }//End Autoplay
   //
   //Next Song Button
+  //Note: very simple NEXT Button, needs to be smarter
   if ( key == 'n' || key =='N' ) {
-    if ( .isPlaying() ) {} else {}
+    if ( songs[currentSong].isPlaying() ) {
+      //Empty IF 
+    } else {
+      currentSong++;
+      //THROWS ArrayOutOfBounds Error
+    }
   } //End Next Song Button
   //
   //Previous Song Button, Back Button
