@@ -128,24 +128,18 @@ void keyPressedMusic() {
   //Note: very simple NEXT Button, needs to be smarter
   if ( key == 'n' || key =='N' ) {
     if ( songs[currentSong].isPlaying() ) {
-      //Empty IF 
+      //Empty IF
       //If you code a next button to be active when a song is playing ...
       //Must include .pause()
       //If the current song is playing, then pressing the next button
       //play the next song
       //Must include .play()
+    } else if ( currentSong == songs.length - 1 ) { //ERROR Catch: ArrayOutOfBounds
+      currentSong = songs.length - songs.length; //Intention is Zero
     } else {
       //.rewind();
-      currentSong++;
       //THROWS ArrayOutOfBounds Error
-      /*
-      if ( currentSong == numberOfSongs - 1 ) { //Throws error: ArrayIndexOutOfBounds
-        currentSong = numberOfSongs - numberOfSongs;
-      } else {
-        currentSong++;
-      }//End Catch "ArrayIndexOutOfBounds"
-      */
-      //Song was not playing, so the next song does not auto play
+      currentSong++;
     }
   } //End Next Song Button
   //
