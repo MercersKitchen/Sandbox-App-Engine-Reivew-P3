@@ -84,10 +84,14 @@ Example To Do List
     - [x] ADVANCED Shuffle Playlist: parameter = int ( random( 0, array.length() ) )
         - Caution: random returns a float
         - Fix with int(), called CASTING
-  - [x] Summarize Music Player Functions
+  - [x] Summarize Music Player Functions, button flow chart
     - [x] address all ERRORs of Minim Library
     - [x] answer how functions are combined into different keyPressed
-    - [x] answer what a Previous Button
+    - [x] answer what triggers a button and the conditions it considers
+    - Example: Previous Button
+      - First 10 Seconds: .rewind(), .pause(), currentSong--
+      - Upto 80%: .rewind()
+      - After 80%: .rewind(), .pause(), currentSong--
 
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Music Player Function will need to work in Key Board Pressing and Button Pressing, thus will need to group code
