@@ -9,7 +9,7 @@ Example To Do List
 ---
 
 # To Do List
-- [] Case Study: layout, developer-rectangles, ratios
+- [x] Case Study: layout, developer-rectangles, ratios
 - [x] Pathway and Directory Reading of file names
 - Drawing 2D Music Buttons: all buttons happen together
   - [x] All drawings start with same X&Y Variables (will be received parameters)
@@ -37,7 +37,9 @@ Example To Do List
       - [x] Mute Button: pressing M will ... stop the speakers but computer will continue to play the file until it ends
         - ERROR: if the .mp3 file is muted AND .mp3 is at the end, then unMute() will rewind() the current .mp3 and play from the beginning
       - [x] Forward Skip: within a song for milliseconds or seconds (student decides how many seconds)
+        - advanced: click twice within 5 seconds, skip one minute, etc.
       - [x] Reverse Skip: within a song for milliseconds or seconds (student decides how many seconds)
+        - advanced: click twice, skip time changes, etc.
       - [x] Loop Single Song Once: parameter = 1
       - [x] Loop Single Song Infinite: parameter is -1 or blank
       - [x] Stop: pressing S will ...
@@ -74,15 +76,19 @@ Example To Do List
           - play(index)
         - Error, Array Index out of Bounds: when index=0, index-1=array.length()-1
         - ```if ( index <= -1 ) { index = array.length() - 1; }```
-      - [] Next & Previous Option: students to code
+      - [x] Next & Previous Option: students to code
         - what happens if a song is playing
         - what happens if a song is not playing
         - Solution: after 10 seconds, the previous buttons plays the beginning of the current song
         - Press Previous Button twice, then play the previous song
-    - [] ADVANCED, Loop & Shuffle Playlist Infinite: parameter = int ( random( 0, array.length() ) )
+    - [x] ADVANCED Shuffle Playlist: parameter = int ( random( 0, array.length() ) )
         - Caution: random returns a float
         - Fix with int(), called CASTING
-    
+  - [x] Summarize Music Player Functions
+    - [x] address all ERRORs of Minim Library
+    - [x] answer how functions are combined into different keyPressed
+    - [x] answer what a Previous Button
+
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Music Player Function will need to work in Key Board Pressing and Button Pressing, thus will need to group code
   - [] Future: connect player function to visual feedback of button
