@@ -96,6 +96,9 @@ Example To Do List
   - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
   - [] Music Player Function will need to work in Key Board Pressing and Button Pressing, thus will need to group code
   - [] Future: connect player function to visual feedback of button
+    - [] Night Mode
+    - [] Hoverover colours
+    - [] Advanced: choosing an array to develop colour scheme choices
 
     
   - [] Future: Night Mode Colors by button and default by time (binary choice, returning a choice based on preference)
