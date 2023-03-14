@@ -93,12 +93,14 @@ Example To Do List
       - Upto 80%: .rewind()
       - After 80%: .rewind(), .pause(), currentSong--
 
-  - [] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
-  - [] Music Player Function will need to work in Key Board Pressing and Button Pressing, thus will need to group code
-  - [] Future: connect player function to visual feedback of button
+  - [x] Organize with Population Tab and Music Button Tab, each with a TAB-Driver and VOIDs connected to the Driver
+  - [x] Music Player Function will need to work in Key Board Pressing and Button Pressing, thus will need to group code
+  - [] Connect player function to visual feedback of button
+    - [] Note: choose colours, then code these with booleans & ternary operators
     - [] Night Mode
-    - [] Hoverover colours
+    - [] Hover-over colours
     - [] Advanced: choosing an array to develop colour scheme choices
+    - [] Additional Coding - 2D Shape Attributes organized by colour choices
 
     
   - [] Future: Night Mode Colors by button and default by time (binary choice, returning a choice based on preference)
