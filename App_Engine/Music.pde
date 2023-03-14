@@ -35,24 +35,9 @@ void drawMusic() {
 void keyPressedMusic() {
   //Music Key Board Short Cuts
   //
-  if ( key == 'm' || key == 'M' ) {//Mute Button, not PAUSE, only affect speakers
-    //ERROR: this MUTE Button only works when song is playing
-    //ERROR Fix: unmute or rewind when song is not playing (i.e. unmute next song)
-    if ( songs[currentSong].isMuted() ) {
-      songs[currentSong].unmute();
-    } else if ( songs[currentSong].position() >= songs[currentSong].length()*4/5 ) {
-      //Students to finish SMARTER Mute Button
-      //ERROR: music player breaks if song finishes
-      /* Ideas
-       - rewind the song
-       - play the next song automatically
-       - play of notification to choose the next song
-       */
-      songs[currentSong].rewind(); //simple solution, contains ERROR
-    } else {
-      songs[currentSong].mute();
-    }
-  }//End Mute Button
+  if ( key == 'm' || key == 'M' ) {
+    mute();
+  }
   //
   //Forward & Reverse Skip
   if ( key == 'f' || key == 'F' ) {
@@ -138,7 +123,7 @@ void keyPressedMusic() {
       songs[currentSong].rewind();
       currentSong = songs.length - songs.length; //Intention is Zero, beginning of play list
     } else {
-       songs[currentSong].rewind();
+      songs[currentSong].rewind();
       currentSong++;
       //THROWS ArrayOutOfBounds Error
     }
@@ -168,5 +153,26 @@ void autoPlayMusic() {
     //Ex#2: .isPlaying(), when false rewind(), currentSong+=1, .play()
   }
 }//End Auto Play Music
+//
+void mute() {
+  //Mute Button, not PAUSE, only affect speakers
+  //ERROR: this MUTE Button only works when song is playing
+  //ERROR Fix: unmute or rewind when song is not playing (i.e. unmute next song)
+  if ( songs[currentSong].isMuted() ) {
+    songs[currentSong].unmute();
+  } else if ( songs[currentSong].position() >= songs[currentSong].length()*4/5 ) {
+    //Students to finish SMARTER Mute Button
+    //ERROR: music player breaks if song finishes
+    /* Ideas
+     - rewind the song
+     - play the next song automatically
+     - play of notification to choose the next song
+     */
+    songs[currentSong].rewind(); //simple solution, contains ERROR
+  } else {
+    songs[currentSong].mute();
+  }
+}//End Mute
+//
 //
 //End Music SubProgram
