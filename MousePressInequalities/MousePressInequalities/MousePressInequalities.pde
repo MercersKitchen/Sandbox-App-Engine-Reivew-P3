@@ -3,6 +3,7 @@
 //
 //Global Variables
 float stopX, stopY, stopWidth, stopHeight;
+boolean stopHoverOver=false;
 //
 void setup() {
   size(700, 500);
@@ -22,7 +23,13 @@ void setup() {
 //
 void draw() {
   //Example STOP Button: button is the logical rectangle
-  if ( stopHoverOver == true ) println("Hovering Over Button");
+  if ( mouseX>=stopX && mouseX<=stopX+stopWidth && mouseY>=stopY && mouseY<=stopY+stopHeight ) 
+  {
+    println("Hovering Over Button");
+  } else 
+  {
+    println("");
+  }
   rect(stopX, stopY, stopWidth, stopHeight);
   //
 }//End draw
@@ -36,11 +43,8 @@ void mousePressed() {
    mouseX>= && mouseX<= && mouseY>= && mouseY<=
    then, add the variables of the rect()
    */
-  if ( mouseX>=stopX && mouseX<=stopX+stopWidth && mouseY>=stopY && mouseY<=stopY+stopHeight )
-  {
-    println("Button Pressed");
+  if ( mouseX>=stopX && mouseX<=stopX+stopWidth && mouseY>=stopY && mouseY<=stopY+stopHeight ) println("Button Pressed");
     stopHoverOver = true;
-  }
   //
 }//End mousePressed
 //
