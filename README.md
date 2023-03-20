@@ -97,8 +97,10 @@ Example To Do List
   - [x] Music Player Function will need to work in Key Board Pressing and Button Pressing, thus will need to group code
   - [] Connect player function to visual feedback of button
     - [] Note: choose colours, then code these with booleans & ternary operators
-    - [] Night Mode
+    - [X] Create the basic mousePressed(){println("Button Pressed");} and hoverover feature in draw() with copied conditional
+    - [] Connect basic mousePressed(){} with keyPressed(){}
     - [] Hover-over colours
+    - [] Night Mode
     - [] Advanced: choosing an array to develop colour scheme choices
     - [] Additional Coding - 2D Shape Attributes organized by colour choices
 
