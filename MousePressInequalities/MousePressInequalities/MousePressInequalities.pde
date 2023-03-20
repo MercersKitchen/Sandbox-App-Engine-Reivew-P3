@@ -23,13 +23,14 @@ void setup() {
 //
 void draw() {
   //Example STOP Button: button is the logical rectangle
-  if ( mouseX>=stopX && mouseX<=stopX+stopWidth && mouseY>=stopY && mouseY<=stopY+stopHeight ) 
+  //Hoverover Feature
+  if ( mouseX>=stopX && mouseX<=stopX+stopWidth && mouseY>=stopY && mouseY<=stopY+stopHeight )
   {
     println("Hovering Over Button");
-  } else 
+  } else
   {
     println("");
-  }
+  }//End Hoverover Feature
   rect(stopX, stopY, stopWidth, stopHeight);
   //
 }//End draw
@@ -44,7 +45,6 @@ void mousePressed() {
    then, add the variables of the rect()
    */
   if ( mouseX>=stopX && mouseX<=stopX+stopWidth && mouseY>=stopY && mouseY<=stopY+stopHeight ) println("Button Pressed");
-    stopHoverOver = true;
   //
 }//End mousePressed
 //
