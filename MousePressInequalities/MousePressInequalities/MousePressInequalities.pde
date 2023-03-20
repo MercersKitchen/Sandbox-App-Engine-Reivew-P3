@@ -22,7 +22,7 @@ void setup() {
 //
 void draw() {
   //Example STOP Button: button is the logical rectangle
-  if () ;
+  if ( stopHoverOver == true ) println("Hovering Over Button");
   rect(stopX, stopY, stopWidth, stopHeight);
   //
 }//End draw
