@@ -3,7 +3,6 @@
 //
 //Global Variables
 float stopX, stopY, stopWidth, stopHeight;
-boolean stopHoverOver=false;
 //
 void setup() {
   size(700, 500);
@@ -31,7 +30,7 @@ void draw() {
   {
     println("");
   }//End Hoverover Feature
-  rect(stopX, stopY, stopWidth, stopHeight);
+  rect(stopX, stopY, stopWidth, stopHeight); //Vars only important
   //
 }//End draw
 //
