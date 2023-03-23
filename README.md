@@ -138,4 +138,7 @@ Future ideas
 
 # To include
 
+To Review Procedural or Introduce Procedural
+- Layout procedures
+- copy code to make procedures
 ---
