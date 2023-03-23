@@ -5,6 +5,7 @@ AudioPlayer[] soundEffects = new AudioPlayer[2];
 String pathway, grove, newsroom, string, door;
 int currentSong=0;
 Boolean autoPlayOn=false;
+Boolean playOn=false;
 //
 float buttonSide, spaceWidth, spaceHeight;
 float pauseX1, pauseY1, pauseX2, pauseY2, pauseWidth;
@@ -18,6 +19,8 @@ float nextX1, nextY1, nextX2, nextY2, nextX3, nextY3, nextXR2, nextYR2, nextWidt
 float prevX1, prevY1, prevX2, prevY2, prevX3, prevY3, prevXR, prevYR, prevWidth;
 float rrX, rrY, nextX, nextY, prevX, prevY, loop1X, loop1Y;
 float loopPlaylistX, loopPlaylistY;
+//
+color defaultWhite=#FFFFFF, red=#FF0000, green=#00FF00; //Note: colours for nightmode
 //
 void setupMusic() {
   //
@@ -68,7 +71,10 @@ void drawMusic() {
   //
   //Play Button
   //rect( playX, playY, buttonSide, buttonSide ); //Layout
+  if ( playOn==true ) {fill(green);} else {fill(defaultWhite);};
+  if ( mouseX>=playX && mouseX<=playX+buttonSide && mouseY>=playY && mouseY<=playY+buttonSide ) fill(red);
   triangle( playX1, playY1, playX2, playY2, playX3, playY3 );
+  fill(defaultWhite);
   //
   //MUTE Button
   rect( muteX, muteY, buttonSide, buttonSide ); //Layout
@@ -178,8 +184,10 @@ void autoPlayMusic() {
 void autoPlay() { //See autoPlayMusic()
   if ( autoPlayOn == false ) {
     autoPlayOn = true;
+    playOn=true;
   } else {
     autoPlayOn = false;
+    playOn=false;
   }
 }//End Auto Play
 //
@@ -190,6 +198,7 @@ void playPause()
   //ERROR: song will not play if at the end
   if ( songs[currentSong].isPlaying() ) {
     songs[currentSong].pause();
+    playOn=false;
   } else if (songs[currentSong].position() >= songs[currentSong].length()*4/5) { //80% of the song
     // Student to Finish
     // .pause(), .rewind(), then cue next song
@@ -198,6 +207,7 @@ void playPause()
   } else {
     //autoPlay(), is better here
     songs[currentSong].play(); //Interim solution
+    playOn=true;
   }
 } //End Play-Pause
 //
