@@ -7,6 +7,9 @@
 //Global Variables
 //
 void setup() {
+  size(700, 500);
+  drawOneRectangle();
+  textSetup();
 }// End setup
 //
 void draw() {
