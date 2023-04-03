@@ -4,6 +4,8 @@
 - Note: could also be a "HoverOver" Feature
 */
 //
+//Global Variables
+//
 void setup() {}// End setup
 //
 void draw() {}// End draw
