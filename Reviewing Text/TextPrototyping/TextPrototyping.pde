@@ -1,1 +1,15 @@
-
+/* Prototyping Text
+- Copy a rectangle from the 2D Music Button Shapes
+- Add a Rectangle to put text in
+- Note: could also be a "HoverOver" Feature
+*/
+//
+void setup() {}// End setup
+//
+void draw() {}// End draw
+//
+void keyPressed() {}// End keyPressed
+//
+void mousePressed() {}//End mousePressed
+//
+//End Main Program
