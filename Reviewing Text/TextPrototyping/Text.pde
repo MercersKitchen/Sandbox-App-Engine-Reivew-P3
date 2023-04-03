@@ -16,9 +16,21 @@ void preTextDraw() {
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
   textFont(font, height); //Change the number until it fits, largest font size
   //textFont() has option to combine font declaration with textSize()
-}// End textDraw
+}// End preTextDraw
 //
-void textDraw() {}// 
+void textDraw() {
+  preTextDraw();
+  //textSize: textWidth(STRING), rectWidth, startingFontSize
+  textSize(textCalculator(height, string, rectWidth));
+  text(string, rectX, rectY, rectWidth, rectHeight);
+  textReset();
+}// End textDraw
+void textReset() {}// End textReset
+//
+float textCalculator() {
+  return ;
+}// End textCalculator
+//
 void textKeyPressed() {
 }// End textKeyPressed
 //
