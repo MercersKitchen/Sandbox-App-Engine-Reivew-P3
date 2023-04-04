@@ -1,6 +1,6 @@
 //Global Variable
 PFont font;
-color ink;
+color ink, whiteInk=#FFFFFF;
 int alignHorizontal, alignVertical; //Display or CANVAS Values
 //
 void textSetup() {
@@ -8,7 +8,7 @@ void textSetup() {
   String[] fontList = PFont.list(); //To list all fonts available on system
    printArray(fontList); //For listing all possible fonts to choose, then createFont
    */
-   font = createFont ("Harrington", 55); //Verify font exists
+  font = createFont ("Harrington", 55); //Verify font exists
   //Tools / Create Font / Find Font / Do Not Press "OK", known bug
   //
 }// End textSetup
@@ -28,7 +28,9 @@ void textDraw( float height, color ink, int alignHorizontal, int alignVertical, 
   text(string, rectX, rectY, rectWidth, rectHeight);
   textReset();
 }// End textDraw
-void textReset() {}// End textReset
+void textReset() {
+  fill(whiteInk);
+}// End textReset
 //
 float textCalculator() {
   return ;
