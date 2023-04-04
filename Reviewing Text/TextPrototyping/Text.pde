@@ -13,16 +13,16 @@ void textSetup() {
   //
 }// End textSetup
 //
-void preTextDraw() {
+void preTextDraw( float height, color ink, int alignHorizontal, int alignVertical, PFont font ) {
   fill(ink); //Ink, hexidecimal copied from Color Selector
   textAlign (alignHorizontal, alignVertical); //Align X&Y, see Processing.org / Reference
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  textFont(font, height); //Change the number until it fits, largest font size
+  textFont(font, height); //Parameters: font & fontSize
   //textFont() has option to combine font declaration with textSize()
 }// End preTextDraw
 //
 void textDraw() {
-  preTextDraw();
+  preTextDraw( height, ink, alignHorizontal, alignVertical, font ); //Called Passing Parameters
   //textSize: textWidth(STRING), rectWidth, startingFontSize
   textSize(textCalculator(height, string, rectWidth));
   text(string, rectX, rectY, rectWidth, rectHeight);
