@@ -10,7 +10,8 @@ void setup() {
   size(700, 500);
   //flatText(); //Does this work?
   drawOneRectangle();
-  textSetup();
+  textSetup(); //must be void setup
+  textDraw(  ); //can be anywhere
 }// End setup
 //
 void draw() {

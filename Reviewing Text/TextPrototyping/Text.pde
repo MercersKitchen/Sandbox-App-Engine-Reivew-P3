@@ -21,7 +21,7 @@ void preTextDraw( float height, color ink, int alignHorizontal, int alignVertica
   //textFont() has option to combine font declaration with textSize()
 }// End preTextDraw
 //
-void textDraw() {
+void textDraw( float height, color ink, int alignHorizontal, int alignVertical, PFont font, String string, float rectX, float rectY, float rectWidth, float rectHeight ) {
   preTextDraw( height, ink, alignHorizontal, alignVertical, font ); //Called Passing Parameters
   //textSize: textWidth(STRING), rectWidth, startingFontSize
   textSize(textCalculator(height, string, rectWidth));
