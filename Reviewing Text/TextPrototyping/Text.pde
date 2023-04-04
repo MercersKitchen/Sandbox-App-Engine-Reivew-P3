@@ -1,6 +1,7 @@
 //Global Variable
 PFont font;
 color ink;
+int alignHorizontal, alignVertical; //Display or CANVAS Values
 //
 void textSetup() {
   /*
