@@ -28,11 +28,18 @@ void textDraw( float height, color ink, int alignHorizontal, int alignVertical, 
   text(string, rectX, rectY, rectWidth, rectHeight);
   textReset();
 }// End textDraw
+//
 void textReset() {
   fill(whiteInk);
 }// End textReset
 //
-float textCalculator() {
+float textCalculator( float size, String string, float rectWidth ) {
+  textSize(size); //For textWidth sizing
+  while ( textWidth(string) > rectWidth )
+  {
+    size = size * 0.99; //size-- will do pixels
+    textSize(size);
+  }
   return ;
 }// End textCalculator
 //
