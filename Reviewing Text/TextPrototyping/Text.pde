@@ -1,13 +1,15 @@
 //Global Variable
-PFont titleFont;
+PFont font;
+color ink;
 //
 void textSetup() {
   /*
   String[] fontList = PFont.list(); //To list all fonts available on system
    printArray(fontList); //For listing all possible fonts to choose, then createFont
    */
-   titleFont = createFont ("Harrington", 55); //Verify font exists
+   font = createFont ("Harrington", 55); //Verify font exists
   //Tools / Create Font / Find Font / Do Not Press "OK", known bug
+  //
 }// End textSetup
 //
 void preTextDraw() {
