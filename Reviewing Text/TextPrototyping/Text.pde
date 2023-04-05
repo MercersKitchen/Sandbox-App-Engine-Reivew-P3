@@ -1,7 +1,8 @@
 //Global Variable
 PFont font;
-color ink, whiteInk=#FFFFFF;
+color ink, purpleInk=#AF00FF, whiteInk=#FFFFFF; //Not Nightmode Friendly
 int alignHorizontal, alignVertical; //Display or CANVAS Values
+String string = "Global Values of String", stringAlternate = "XX";
 //
 void textSetup() {
   /*
@@ -40,7 +41,7 @@ float textCalculator( float size, String string, float rectWidth ) {
     size = size * 0.99; //size-- will do pixels
     textSize(size);
   }
-  return ;
+  return size;
 }// End textCalculator
 //
 void textKeyPressed() {

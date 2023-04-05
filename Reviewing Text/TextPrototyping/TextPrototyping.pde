@@ -11,7 +11,9 @@ void setup() {
   //flatText(); //Does this work?
   drawOneRectangle();
   textSetup(); //must be void setup
-  textDraw(  ); //can be anywhere
+  //Below shows population of local variables
+  textDraw( height, purpleInk, CENTER, CENTER, font, string, playX1, playY1, playWidth, playHeight ); //can be anywhere
+  textDraw( height, purpleInk, CENTER, CENTER, font, stringAlternate, playX1, playY1+height*1/4, playWidth, playHeight ); //can be anywhere
 }// End setup
 //
 void draw() {
@@ -51,7 +53,7 @@ void flatText() { //Reviewing Introductory Text Code
   //Horiztonal Values (X): [LEFT | CENTER | RIGHT]
   //Vertical Values (Y): [TOP | CENTER | BOTTOM | BASELINE]
   textFont(font, height); //Change the number until it fits, largest font size
-  textSize( 50 ); //Change the number until it fits, largest font size
+  textSize( 50 ); //overwrites the previous text size
   //
   //Printing Text on the CANVAS
   text( string, textRectX, textRectY, textRectWidth, textRectHeight );
