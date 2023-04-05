@@ -25,7 +25,7 @@ void preTextDraw( float height, color ink, int alignHorizontal, int alignVertica
 void textDraw( float height, color ink, int alignHorizontal, int alignVertical, PFont font, String string, float rectX, float rectY, float rectWidth, float rectHeight ) {
   preTextDraw( height, ink, alignHorizontal, alignVertical, font ); //Called Passing Parameters
   //textSize: textWidth(STRING), rectWidth, startingFontSize
-  textSize(textCalculator(height, string, rectWidth));
+  textSize(textCalculator(height, string, rectWidth)); //overwrites the previous text size
   text(string, rectX, rectY, rectWidth, rectHeight);
   textReset();
 }// End textDraw
