@@ -13,6 +13,7 @@ void setup() {
   drawOneRectangle();
   textSetup(); //must be void setup
   textDraw( height, purpleInk, CENTER, CENTER, Harrington, string, playX1, playY1, playWidth, playHeight ); //can be anywhere
+  textDraw( height, purpleInk, CENTER, CENTER, Harrington, stringAlternate, playX1, playY1+height*1/4, playWidth, playHeight ); //can be anywhere
 }// End setup
 //
 void draw() {}// End draw
