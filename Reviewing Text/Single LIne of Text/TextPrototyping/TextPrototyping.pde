@@ -12,27 +12,12 @@ void setup() {
   //flatText(); //Does this work?
   drawOneRectangle();
   textSetup(); //must be void setup
+  textDraw( height, purpleInk, CENTER, CENTER, font, string, playX1, playY1, playWidth, playHeight ); //can be anywhere
 }// End setup
 //
-void draw() {
-  //Example Text behind a key press
-  background(whiteInk);
-  //
-  //Below shows population of local variables
-  textDraw( height, purpleInk, CENTER, CENTER, font, string, playX1, playY1, playWidth, playHeight ); //can be anywhere
-  if ( drawText == true ) textDraw( height, purpleInk, CENTER, CENTER, font, stringAlternate, playX1, playY1+height*1/4, playWidth, playHeight ); //can be anywhere
-  println( drawText );
-}// End draw
+void draw() {}// End draw
 //
-void keyPressed() {
-  if ( key=='t' | key=='T' ) {
-    if ( drawText == false ) {
-      drawText=true;
-    } else {
-      drawText=false;
-    }
-  }
-}// End keyPressed
+void keyPressed() {}// End keyPressed
 //
 void mousePressed() {
 }//End mousePressed
