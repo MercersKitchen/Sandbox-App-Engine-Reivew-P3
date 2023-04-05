@@ -1,5 +1,5 @@
 //Global Variable
-PFont font;
+PFont Harrington;
 color ink, purpleInk=#AF00FF, whiteInk=#FFFFFF; //Not Nightmode Friendly
 int alignHorizontal, alignVertical; //Display or CANVAS Values
 String string = "Global Values of String", stringAlternate = "XX";
@@ -9,7 +9,7 @@ void textSetup() {
   String[] fontList = PFont.list(); //To list all fonts available on system
    printArray(fontList); //For listing all possible fonts to choose, then createFont
    */
-  font = createFont ("Harrington", 55); //Verify font exists
+  Harrington = createFont ("Harrington", 55); //Verify font exists
   //Tools / Create Font / Find Font / Do Not Press "OK", known bug
   //
 }// End textSetup
