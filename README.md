@@ -104,7 +104,13 @@ Example To Do List
     - [] Advanced: choosing an array to develop colour scheme choices
     - [] Additional Coding - 2D Shape Attributes organized by colour choices
 
-    
+- [x] Drawing Text
+  - [x] Review Flat Program
+  - [x] Create Procedural Program
+  - [x] Build Font Size Calculator
+
+- Images
+
   - [] Future: Night Mode Colors by button and default by time (binary choice, returning a choice based on preference)
     - Use of ternary operator
     - CS20 is able to use daytime procedure for more individual control
