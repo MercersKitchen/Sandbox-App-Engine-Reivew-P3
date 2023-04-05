@@ -5,21 +5,33 @@
  */
 //
 //Global Variables
+Boolean drawText=false;
 //
 void setup() {
   size(700, 500);
   //flatText(); //Does this work?
   drawOneRectangle();
   textSetup(); //must be void setup
-  //Below shows population of local variables
-  textDraw( height, purpleInk, CENTER, CENTER, font, string, playX1, playY1, playWidth, playHeight ); //can be anywhere
-  textDraw( height, purpleInk, CENTER, CENTER, font, stringAlternate, playX1, playY1+height*1/4, playWidth, playHeight ); //can be anywhere
 }// End setup
 //
 void draw() {
+  //Example Text behind a key press
+  background(whiteInk);
+  //
+  //Below shows population of local variables
+  textDraw( height, purpleInk, CENTER, CENTER, font, string, playX1, playY1, playWidth, playHeight ); //can be anywhere
+  if ( drawText == true ) textDraw( height, purpleInk, CENTER, CENTER, font, stringAlternate, playX1, playY1+height*1/4, playWidth, playHeight ); //can be anywhere
+  println( drawText );
 }// End draw
 //
 void keyPressed() {
+  if ( key=='t' | key=='T' ) {
+    if ( drawText == false ) {
+      drawText=true;
+    } else {
+      drawText=false;
+    }
+  }
 }// End keyPressed
 //
 void mousePressed() {
