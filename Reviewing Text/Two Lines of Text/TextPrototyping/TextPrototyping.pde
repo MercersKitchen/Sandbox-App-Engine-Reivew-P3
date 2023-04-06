@@ -5,7 +5,6 @@
  */
 //
 //Global Variables
-Boolean drawText=false;
 //
 void setup() {
   size(700, 500);
