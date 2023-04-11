@@ -3,12 +3,14 @@ No Aspect Ratio
 Filling the Rectangle
 */
 //Global Variables
+int appWidth, appHeight;
 //
-size();
-appWidth = ;
-appHeight = ;
+size(500, 100); //Landscape
+appWidth = width;
+appHeight = height;
 // 
 //Population
 //
 //Rectangle layout and Image drawing to CANVAS
+rect(X, Y, Width, Height);
 //End Main Program
