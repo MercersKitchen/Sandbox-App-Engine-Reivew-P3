@@ -12,5 +12,5 @@ appHeight = height;
 //Population
 //
 //Rectangle layout and Image drawing to CANVAS
-rect(X, Y, Width, Height);
+//rect(imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
 //End Main Program
