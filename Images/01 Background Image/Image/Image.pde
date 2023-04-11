@@ -5,6 +5,7 @@ Filling the Rectangle
 //Global Variables
 int appWidth, appHeight;
 float imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight;
+PImage pic;
 //
 size(500, 100); //Landscape
 appWidth = width;
@@ -15,6 +16,7 @@ imageBackgroundX = appWidth*0;
 imageBackgroundY = appHeight*0;
 imageBackgroundWidth = appWidth-1;
 imageBackgroundHeight =appHeight-1;
+pic = loadImage("../../Images Used/Landscape & Square Images/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
 //
 //Rectangle layout and Image drawing to CANVAS
 rect( imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight );
