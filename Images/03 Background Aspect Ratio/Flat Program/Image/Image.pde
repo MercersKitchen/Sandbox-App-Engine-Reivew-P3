@@ -7,7 +7,7 @@ int appWidth, appHeight;
 float imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight;
 PImage pic;
 Boolean nightMode=false;
-float picWidthAdjusted=0.0, picHeightAdjusted=0.0; //IF requires previous value
+float picWidthAdjusted=0.0, picHeightAdjusted=0.0; //IF requires previous value, not NULL
 //
 size(500, 100); //Landscape
 appWidth = width;
@@ -24,19 +24,20 @@ String upFolder = "..";
 String openFolder = "/";
 String folder1 = "Images Used";
 String folder2 = "Landscape & Square Images";
+String pathway = upFolder+openFolder+upFolder+openFolder+upFolder+openFolder+folder1+openFolder+folder2+openFolder;
 String fileName = "Obi-wan-star-wars-jedi-23864621-800-600.jpg";
-pic = loadImage( upFolder+openFolder+upFolder+openFolder+folder1+openFolder+folder2+openFolder+fileName);
+pic = loadImage( pathway + fileName);
 int picWidth = 800; //Origonal Dimensions, MINE is 800, not yours
 int picHeight = 600; //Origonal Dimensions, MINE is 600, not yours
-//Larger Dimension Algorithm, any image, ASPECCT RATIO
-int smallerDimension, largerDimension;
-float imageHeigthRatio, imageWidthRatio;
+//Larger Dimension Algorithm, any image, ASPECT RATIO
+int smallerDimension, largerDimension; //Local Variables, only used in IF to calculate Global Variable
+float imageHeigthRatio, imageWidthRatio; //Local Variables, only used in IF to calculate Global Variable
 if ( picWidth >= picHeight ) { //TRUE if Landscape or Square
   largerDimension = picWidth;
   smallerDimension = picHeight;
-  imageHeigthRatio = float (smallerDimension) / float (largerDimension); //Ratio is <=1
+  imageHeigthRatio = float (smallerDimension) / float (largerDimension); //Ratio is <=1,, fixed by CASTING
   picWidthAdjusted = imageBackgroundWidth; //Compressed into rect()
-  picHeightAdjusted = imageBackgroundWidth * imageHeigthRatio;
+  picHeightAdjusted = picWidthAdjusted * imageHeigthRatio; //Calculated Variable from compressed variable
 } else { //FALSE if Portrait
   /* Students to finish
    largerDimension = ;
@@ -55,9 +56,9 @@ if ( nightMode==true ) tint(64, 64, 40); //RGB: Night Mode
 //No ASPECT RATIO Image
 //image( pic, imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight );
 //
-//image doesn't print to CANVAS if ... integer variables trucanted into floats
-println( imageBackgroundX, imageBackgroundY, picWidthAdjusted, picHeightAdjusted );
 //ASPECT RATIO Image
+//image doesn't print to CANVAS if ... integer variables trucanted into floats
+println( picWidthAdjusted, picHeightAdjusted ); //View Human Error on variables, zero values
 image( pic, imageBackgroundX, imageBackgroundY, picWidthAdjusted, picHeightAdjusted );
 //ERROR: adjusted value is too big for rect so cannot see the full image
 
