@@ -7,8 +7,9 @@ int appWidth, appHeight;
 float imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight;
 PImage pic;
 Boolean nightMode=false;
+float whiteSpace=0.0, picX_Adjusted=0.0, picY_Adjusted=0.0;
 float picWidthAdjusted=0.0, picHeightAdjusted=0.0; //IF requires previous value, not NULL
-Boolean imageCenter==true; imageRight==false; //Vars Image Justification
+Boolean imageCenter=true, imageRightBottom=false; //Vars Image Justification
 //
 size(500, 100); //Landscape
 appWidth = width;
@@ -39,12 +40,24 @@ if ( picWidth >= picHeight ) { //TRUE if Landscape or Square
   imageHeigthRatio = float (smallerDimension) / float (largerDimension); //Ratio is <=1,, fixed by CASTING
   picWidthAdjusted = imageBackgroundWidth; //Compressed into rect()
   picHeightAdjusted = picWidthAdjusted * imageHeigthRatio; //Calculated Variable from compressed variable
-  //If Imgage fits in rect: center the smaller dimension
+  //if imgage fits in rect: format or justify image
   whiteSpace = imageBackgroundHeight - picHeightAdjusted;
-  if ( imageCenter==true ) picY_Adjusted = imageBackgroundY + whiteSpace*1/2; 
+  //if image left justified, then no change to Y-Var
+  picX_Adjusted = imageBackgroundX;
+  picY_Adjusted = imageBackgroundY;
+  if ( imageCenter==true ) picY_Adjusted = imageBackgroundY + whiteSpace*1/2;
+  if ( imageRightBottom==true) picY_Adjusted = imageBackgroundY + whiteSpace;
+  //
   if ( picHeightAdjusted > imageBackgroundHeight ) { //ERROR Catch: adusted height is bigger then rect()
     picHeightAdjusted = imageBackgroundHeight;
     picWidthAdjusted = picWidthAdjusted * imageHeigthRatio;
+    //if imgage fits in rect: format or justify image
+    whiteSpace = imageBackgroundWidth - picWidthAdjusted;
+    //if image left justified, then no change to X-Var
+    picX_Adjusted = imageBackgroundX;
+    picY_Adjusted = imageBackgroundY;
+    if ( imageCenter==true ) picX_Adjusted = imageBackgroundX + whiteSpace*1/2;
+    if ( imageRightBottom==true) picX_Adjusted = imageBackgroundX + whiteSpace;
   }
 } else { //FALSE if Portrait
   /* Students to finish
@@ -67,7 +80,7 @@ if ( nightMode==true ) tint(64, 64, 40); //RGB: Night Mode
 //ASPECT RATIO Image
 //image doesn't print to CANVAS if ... integer variables trucanted into floats
 println( picWidthAdjusted, picHeightAdjusted ); //View Human Error on variables, zero values
-image( pic, imageBackgroundX, picY_Adjusted, picWidthAdjusted, picHeightAdjusted );
+image( pic, picX_Adjusted, picY_Adjusted, picWidthAdjusted, picHeightAdjusted );
 //ERROR: adjusted value is too big for rect so cannot see the full image
 
 //CONTINUE HERE
