@@ -9,7 +9,7 @@ PImage pic;
 Boolean nightMode=false;
 float whiteSpace=0.0, picX_Adjusted=0.0, picY_Adjusted=0.0;
 float picWidthAdjusted=0.0, picHeightAdjusted=0.0; //IF requires previous value, not NULL
-Boolean imageCenter=false, imageRightBottom=false; //Image Justification
+Boolean imageCenter=false, imageRightBottom=false; //Dev-level Image Justification
 //
 size(500, 100); //Landscape
 appWidth = width;
@@ -42,9 +42,9 @@ if ( picWidth >= picHeight ) { //TRUE if Landscape or Square
   picHeightAdjusted = picWidthAdjusted * imageHeigthRatio; //Calculated Variable from compressed variable
   //if imgage fits in rect: format or justify image
   whiteSpace = imageBackgroundHeight - picHeightAdjusted;
-  //if image left justified, then no change to Y-Var
+  //if image left justified, then no change to X&Y Vars
   picX_Adjusted = imageBackgroundX;
-  picY_Adjusted = imageBackgroundY;
+  picY_Adjusted = imageBackgroundY; 
   if ( imageCenter==true ) picY_Adjusted = imageBackgroundY + whiteSpace*1/2;
   if ( imageRightBottom==true) picY_Adjusted = imageBackgroundY + whiteSpace;
   //
@@ -53,7 +53,7 @@ if ( picWidth >= picHeight ) { //TRUE if Landscape or Square
     picWidthAdjusted = picWidthAdjusted * imageHeigthRatio;
     //if imgage fits in rect: format or justify image
     whiteSpace = imageBackgroundWidth - picWidthAdjusted;
-    //if image left justified, then no change to X-Var
+    //if image left justified, then no change to X&Y Vars
     picX_Adjusted = imageBackgroundX;
     picY_Adjusted = imageBackgroundY;
     if ( imageCenter==true ) picX_Adjusted = imageBackgroundX + whiteSpace*1/2;
