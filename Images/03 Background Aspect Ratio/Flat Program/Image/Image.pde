@@ -9,7 +9,7 @@ PImage pic;
 Boolean nightMode=false;
 float whiteSpace=0.0, picX_Adjusted=0.0, picY_Adjusted=0.0;
 float picWidthAdjusted=0.0, picHeightAdjusted=0.0; //IF requires previous value, not NULL
-Boolean imageCenter=true, imageRightBottom=false; //Vars Image Justification
+Boolean imageCenter=false, imageRightBottom=false; //Image Justification
 //
 size(500, 100); //Landscape
 appWidth = width;
