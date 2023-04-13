@@ -38,6 +38,10 @@ if ( picWidth >= picHeight ) { //TRUE if Landscape or Square
   imageHeigthRatio = float (smallerDimension) / float (largerDimension); //Ratio is <=1,, fixed by CASTING
   picWidthAdjusted = imageBackgroundWidth; //Compressed into rect()
   picHeightAdjusted = picWidthAdjusted * imageHeigthRatio; //Calculated Variable from compressed variable
+  if ( picHeightAdjusted > imageBackgroundHeight ) { //ERROR Catch: adusted height is bigger then rect()
+    picHeightAdjusted = imageBackgroundHeight;
+    picWidthAdjusted = picWidthAdjusted * ( float(largerDimension)/float(smallerDimension) ); //CASTING, like previous formula
+  }
 } else { //FALSE if Portrait
   /* Students to finish
    largerDimension = ;
