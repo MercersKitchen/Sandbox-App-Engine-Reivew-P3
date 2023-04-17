@@ -21,14 +21,16 @@ Progressions
   - Building IF statements in mousePressed(){}, the purpose of this exercise
 - Work through this with them
 - "What changes would need to be made for V2?"
-- Students problem solve for 5 minutes
-- Work through this with them
+- Hint: should only be changes in void mousePressed() {}
 
 ---
 
-Is this actually version 2???
+Notes
 
-Sometimes in multi-level games we want to see some items in the Canvas, but not others
-- Stage 1
-- Stage 2
-- not both stages
+Version 1: like a Menu Feature (Music Buttons as a menu feature)
+- will be seen and be active when button pressed
+- will be deactivated when pressed anywhere on the screen
+
+Version 2: like a play-pause button
+
+---
