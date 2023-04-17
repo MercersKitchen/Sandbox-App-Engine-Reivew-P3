@@ -5,7 +5,7 @@ float buttonX2, buttonY2, buttonWidth2, buttonHeight2;
 //
 void setup() {
   //Display Geometry
-  size( 1500, 400 ); //fullScreen(); //displayWidth, displayHeight
+  size( 600, 400 ); //fullScreen(); //displayWidth, displayHeight
   //Display Orientation: Landscape, not portrait nor square
   //ERROR Catch: If CANVAS is bigger than display, send feedback to user
   println (width, height, displayWidth, displayHeight);
