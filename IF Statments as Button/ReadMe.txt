@@ -1,9 +1,13 @@
 
-Purpose: create one bigger program using the subprograms that work
+Purpose:
+- Use If statements to simulate a MENU Featre (for Music Buttons)
+- Use IF statements to simulate a Play-Pause Button
+
+Notes
 - Must start with blank .pde
 - add code as needed
 
-Options: Images
+Options: Use images instead of other ideas
 
 ---
 
