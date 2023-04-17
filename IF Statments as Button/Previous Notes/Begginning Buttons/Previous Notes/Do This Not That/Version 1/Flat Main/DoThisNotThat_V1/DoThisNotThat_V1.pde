@@ -70,7 +70,7 @@ void setup()
   xDiameter = ellipseXDiameter;
   yDiameter = ellipseYDiameter;
   //
-  //Text Setup
+  //Text Setup, not using Subprogram
   //String[] fontList = PFont.list(); //To list all fonts available on system
   println("Start of Console");
   //printArray(fontList); //For listing all possible fonts to choose, then createFont
@@ -86,7 +86,7 @@ void draw()
   //rect(ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter); //DIV: Display Ellipse
   if (rectON==false && ellipseON==true) ellipse(x, y, xDiameter, yDiameter);
   //
-  //Text Draw, General Code for any text
+  //Text Draw, General Code for any text, not using Subprogram
   //Note: visualization rectangle is in main program
   fill(purple); //Ink, hexidecimal copied from Color Selector
   textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
